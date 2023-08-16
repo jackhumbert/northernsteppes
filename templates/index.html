@@ -127,7 +127,7 @@
                 <ul class="menu">
                     {% set index_section = get_section(path="_index.md") %}
                     {% block sidebar_nav %}{% for link in index_section.pages %}
-                    <li><a href="{{ link.path }}">{{ link.title }}</a></li>
+                    <li><a href="{{ config.base_url ~ link.path }}">{{ link.title }}</a></li>
                     {% endfor %}{% endblock sidebar_nav %}
                 </ul>
             </nav>
