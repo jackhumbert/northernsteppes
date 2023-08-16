@@ -12,7 +12,8 @@
     --gap: 24px;
     --content-gap: 20px;
     --nav-width: 1024px;
-    --main-width: 640px;
+    // --main-width: 640px;
+    --main-width: 1024px;
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
@@ -611,14 +612,22 @@
 .button {
   background: var(--hljs-bg);
   color: var(--border);
-  padding: 4px 8px;
+  padding: 8px 8px;
   box-shadow: 0px;
   border-radius: 5px;
   font-size: 14px;
+  display: inline-block;
+  line-height: 1;
 }
 
 figure figcaption {
   color: var(--secondary);
   font-size: 14px;
   margin-top: 4px;
+}
+
+.practice-information {
+  float: right;
+  width: 33%;
+  margin-left: 10px;
 }

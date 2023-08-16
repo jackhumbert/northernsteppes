@@ -126,12 +126,19 @@
                 {% endif %}
                 <ul class="menu">
                     {% set index_section = get_section(path="_index.md") %}
-                    {% block sidebar_nav %}{% for link in index_section.pages %}
-                    <li><a href="{{ get_url(path=link.path) }}">{{ link.title }}</a></li>
+                    {% block sidebar_nav %}{% for link in index_section.pages | sort(attribute="title") %}
+                    <li><a href="{{ get_url(path=link.path, trailing_slash=true) }}">{{ link.title }}</a></li>
                     {% endfor %}{% endblock sidebar_nav %}
                 </ul>
             </nav>
         </header>
+        {% if section.extra.banner %}
+        <div style="background:url('{{ section.extra.banner}}');
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        "></div>
+        {% endif %}
 
         <main class="main">
             {% block content %}
