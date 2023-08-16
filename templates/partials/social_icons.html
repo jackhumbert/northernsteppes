@@ -1,0 +1,10 @@
+{% import "macros/social_icon.svg.html" as social_icons %}
+{% if config.extra.social_icons %}
+<div class="social-icons">
+    {% for social_icon in config.extra.social_icons %}
+    <a href="{{ social_icon.url | replace(from='$BASE_URL', to=config.base_url) }}" target="_blank" rel="noopener noreferrer me" title="{{ social_icon.title }}">
+        {{ social_icons::factory(icon=social_icon.icon) }}
+    </a>
+    {% endfor %}
+</div>
+{% endif %}

@@ -1,0 +1,55 @@
+<div class="practice-information">
+
+<h2>Join us at our weekly practices!</h2>
+
+<p>
+Fridays, <time datetime="17:00">5pm</time> to <time datetime="20:00">8pm</time> at <a href="https://goo.gl/maps/xom6eK1HCNbjvKuQA"><strong>East Swinney Park by the Disc Golf</strong></a><br />
+<a class="button" href="#" id="swinney-calendar-link">Add Friday practice to your calendar</a>
+</p>
+
+<p>
+Sundays, <time datetime="12:30">12:30pm</time> to <time datetime="17:30">5:30pm</time> at <a href="https://goo.gl/maps/ngP4NkTxUmCJGZne6"><strong>Shoaff Park by the Splash Pad</strong></a><br />
+<a class="button" href="#" id="shoaff-calendar-link">Add Sunday practice to your calendar</a>
+</p>
+
+</div>
+
+<script>
+
+
+{
+    let startDate = new Date();
+    let endDate = new Date();
+    startDate.setHours(17, 0, 0, 0);
+    startDate.setDate(startDate.getDate() + (5 + 7 - startDate.getDay()) % 7);
+    endDate.setDate(startDate.getDate());
+    endDate.setHours(20, 0, 0, 0);
+
+    let googleCalLink = new URL("https://calendar.google.com/calendar/r/eventedit");
+    googleCalLink.searchParams.append("text", "Belegarth Practice");
+    googleCalLink.searchParams.append("details", "https://thenorthernsteppes.org");
+    googleCalLink.searchParams.append("dates", startDate.toISOString().replace(/[^\w\s]/gi, '') + "/" + endDate.toISOString().replace(/[^\w\s]/gi, ''));
+    googleCalLink.searchParams.append("location", "41.073488, -85.160017");
+    googleCalLink.searchParams.append("recur", "RRULE:FREQ=WEEKLY");
+
+    document.getElementById("swinney-calendar-link").href = googleCalLink.href;
+}
+
+{
+    let startDate = new Date();
+    let endDate = new Date();
+    startDate.setHours(12, 30, 0, 0);
+    startDate.setDate(startDate.getDate() + (7 + 7 - startDate.getDay()) % 7);
+    endDate.setDate(startDate.getDate());
+    endDate.setHours(17, 30, 0, 0);
+
+    let googleCalLink = new URL("https://calendar.google.com/calendar/r/eventedit");
+    googleCalLink.searchParams.append("text", "Belegarth Practice");
+    googleCalLink.searchParams.append("details", "https://thenorthernsteppes.org");
+    googleCalLink.searchParams.append("dates", startDate.toISOString().replace(/[^\w\s]/gi, '') + "/" + endDate.toISOString().replace(/[^\w\s]/gi, ''));
+    googleCalLink.searchParams.append("location", "41.144078, -85.097697");
+    googleCalLink.searchParams.append("recur", "RRULE:FREQ=WEEKLY");
+
+    document.getElementById("shoaff-calendar-link").href = googleCalLink.href;
+}
+</script>

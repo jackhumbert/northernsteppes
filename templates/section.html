@@ -1,0 +1,57 @@
+{% extends "index.html" %}
+
+{% block content %}
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">{{ section.title }}</h1>
+        <div class="post-meta">
+            {% if section.extra.author %}
+            {% if section.extra.author_url %}Author: <a class="post-author" href="{{ section.extra.author_url | safe }}">
+                {{ section.extra.author }}
+            </a>
+            {% else %}<span class="post-author">
+                Author: {{ section.extra.author }}
+            </span>{% endif %}
+            <br/>
+            {% endif %}
+        </div>
+    </header>
+    <div class="post-content">{{ section.content | safe }}</div>
+    {% if paginator %}
+        {% set pages = paginator.pages %}
+    {% else %}
+        {% set pages = section.pages %}
+    {% endif %}
+    {% for page in pages %}
+    <article class="post-entry">
+      <header class="entry-header">
+          <h2>{{ page.title }}</h2>
+      </header>
+      {% if page.date %}
+      <div class="entry-date">
+        {{ page.date | date(format="%B %e, %Y") }}
+      </div>
+      {% endif %}
+      {% if page.summary %}
+      <div class="entry-content">
+          <p>{{ page.summary | safe }}</p>
+      </div>
+      {% elif page.description %}
+      <div class="entry-content">
+          <p>{{ page.description | safe }}</p>
+      </div>
+      {% endif %}
+      <a class="entry-link" aria-label="post link to {{ page.title }}" href="{{ page.permalink }}"></a>
+    </article>
+    {% endfor %}
+    <footer class="post-footer">
+        {% if section.taxonomies and section.taxonomies.tags %}
+        <ul class="post-tags">
+        {% for tag in section.taxonomies.tags %}
+            <li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </footer>
+</article>
+{% endblock content %}
