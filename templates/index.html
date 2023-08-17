@@ -126,7 +126,11 @@
                 {% endif %}
                 <ul class="menu">
                     {% set index_section = get_section(path="_index.md") %}
-                    {% block sidebar_nav %}{% for link in index_section.pages | sort(attribute="title") | filter(attribute="extra.header", value=true) %}
+                    {% set_global links = index_section.pages %}
+                    {% for subsection in index_section.subsections %} 
+                        {% set_global links = links | concat(with=get_section(path=subsection)) %}
+                    {% endfor %}
+                    {% block sidebar_nav %}{% for link in links | filter(attribute="extra.header", value=true) | sort(attribute="title") %}
                     <li><a href="{{ get_url(path=link.path, trailing_slash=true) }}">{{ link.title }}</a></li>
                     {% endfor %}{% endblock sidebar_nav %}
                 </ul>
@@ -157,7 +161,7 @@
             {% include "partials/social_icons.html" %}
             
             <div class="posts">                
-                {% set section = get_section(path="posts/_index.md") %}
+                {% set section = get_section(path="news/_index.md") %}
                 {% for page in section.pages | sort(attribute="date") | reverse %}
                 <article class="post-entry">
                 {{ post_macros::page_in_list(page=page)}}
@@ -175,11 +179,11 @@
         </main>
 
         <footer class="footer">
+            <span>&copy; {{ now() | date(format="%Y") }} <a href="{{ get_url(path="", trailing_slash=false ) }}">{{ config.title }}</a></span>
+            <span>&middot;</span>
             <span><a href="{{ get_url(path="bylaws") }}">Bylaws</a></span>
             <span>&middot;</span>
             <span><a href="{{ get_url(path="code-of-conduct") }}">Code of Conduct</a></span>
-            <br />
-            <span>&copy; {{ now() | date(format="%Y") }} <a href="{{ get_url(path="", trailing_slash=false ) }}">{{ config.title }}</a></span>
             <span>&middot;</span>
             <span>Powered by <a href="https://www.getzola.org" rel="noopener" target="_blank">Zola</a>️</span>
             <span>&middot;</span>

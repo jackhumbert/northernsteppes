@@ -1,0 +1,51 @@
+{% extends "section.html" %}
+
+{% block content %}
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">Upcoming Events</h1>
+    </header>
+    <div class="post-content">{{ section.content | safe }}</div>
+    {% if paginator %}
+        {% set pages = paginator.pages %}
+    {% else %}
+        {% set pages = section.pages %}
+    {% endif %}
+    {% for page in pages %}
+    <article class="post-entry" id="{{ page.slug }}">
+      <header class="entry-header">
+          <h2>{{ page.title }}</h2>
+      </header>
+      {% if page.date %}
+      <div class="entry-date">
+        {{ page.date | date(format="%B %e, %Y") }}
+      </div>
+      {% endif %}
+      {% if page.summary %}
+      <div class="entry-content">
+          <p>{{ page.summary | safe }}</p>
+      </div>
+      {% elif page.description %}
+      <div class="entry-content">
+          <p>{{ page.description | safe }}</p>
+      </div>
+      {% endif %}
+      <a class="entry-link" aria-label="post link to {{ page.title }}" href="{{ page.permalink }}"></a>
+    </article>
+    <script>
+       if (new Date("{{ page.date }}") < new Date()) {
+            document.getElementById("{{ page.slug }}").remove()
+        }
+    </script>
+    {% endfor %}
+    <footer class="post-footer">
+        {% if section.taxonomies and section.taxonomies.tags %}
+        <ul class="post-tags">
+        {% for tag in section.taxonomies.tags %}
+            <li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </footer>
+</article>
+{% endblock content %}
