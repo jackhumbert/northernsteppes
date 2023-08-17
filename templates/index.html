@@ -67,6 +67,7 @@
 
         <script>
             function setTheme() {
+                /*
                 const time = new Date();
       
                 const prev = localStorage.getItem('date');
@@ -105,6 +106,13 @@
                     sunset = Number(localStorage.getItem('sunset'));
                     setBodyClass();
                 }
+                */
+
+                let dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                if (dark) {
+                    document.body.classList.add('dark');
+                }
+
             }
         </script>
     </head>
