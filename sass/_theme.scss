@@ -610,14 +610,19 @@
 // }
 
 .button {
-  background: var(--hljs-bg);
-  color: var(--border);
+  background: var(--primary);
+  color: var(--theme);
   padding: 8px 8px;
-  box-shadow: 0px;
+  box-shadow: none ! important;
   border-radius: 5px;
   font-size: 14px;
   display: inline-block;
   line-height: 1;
+  margin: 4px auto;
+}
+.button.full {
+  width: 100%;
+  text-align: center;
 }
 
 figure figcaption {
@@ -629,5 +634,8 @@ figure figcaption {
 .practice-information {
   float: right;
   width: 33%;
-  margin-left: 10px;
+  margin-left: 20px;
+  background: var(--entry);
+  padding: 0px 20px;
+  border-radius: 10px;
 }

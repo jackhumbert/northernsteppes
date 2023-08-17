@@ -126,7 +126,7 @@
                 {% endif %}
                 <ul class="menu">
                     {% set index_section = get_section(path="_index.md") %}
-                    {% block sidebar_nav %}{% for link in index_section.pages | sort(attribute="title") %}
+                    {% block sidebar_nav %}{% for link in index_section.pages | sort(attribute="title") | filter(attribute="extra.header", value=true) %}
                     <li><a href="{{ get_url(path=link.path, trailing_slash=true) }}">{{ link.title }}</a></li>
                     {% endfor %}{% endblock sidebar_nav %}
                 </ul>

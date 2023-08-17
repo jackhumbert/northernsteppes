@@ -1,5 +1,8 @@
 +++
 title = "Members"
+
+[extra]
+header = true
 +++
 
 ## Blooded Members

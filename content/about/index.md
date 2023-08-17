@@ -1,5 +1,7 @@
 +++
 title = "About"
+[extra]
+header = true
 +++
 
 {% photo(url="2017-group-photo.jpg") %}
