@@ -5,11 +5,22 @@ title = "Leadership"
 header = true
 +++
 
+<style>
+
+@media (min-width: 750px) {
+.leadership-pic {
+    float: right; 
+    margin-left: 20px; 
+    clear: right;
+}
+}
+</style>
+
 *Listed in order of succession*
 
-<div style="float: right; margin-left: 20px">
+<div class="leadership-pic">
 {% photo(url="kaigar.jpg") %}
-Kaigar at Gathering of the Clans 2015
+Sir Kaigar at Gathering of the Clans 2015
 {% end %}
 </div>
 
@@ -21,7 +32,7 @@ The Cheiftain leads his War Band into the battle. Brave and true you can always 
 
 The Chieftain fulfills the charter requirements as Administrator. In the case that no other leaders are available or elected to fulfill a responsibility, they fall to the Chieftain.
 
-<div style="float: right; margin-left: 20px; clear: right">
+<div class="leadership-pic">
 {% photo(url="magnus.jpg") %}
 Magnus at Gathering of the Clans 2015
 {% end %}
@@ -35,7 +46,7 @@ The Hand is the voice and executor of the Chieftain’s authority. Carrying the 
 
 The Hand of the Chieftain fulfills the charter requirements as Administrative Assistant.
 
-<div style="float: right; margin-left: 20px; clear: right">
+<div class="leadership-pic">
 {% photo(url="mantis.jpg") %}
 Mantis
 {% end %}

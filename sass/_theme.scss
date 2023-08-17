@@ -631,6 +631,8 @@ figure figcaption {
   margin-top: 4px;
 }
 
+@media (min-width: 750px) {
+
 .practice-information {
   float: right;
   width: 33%;
@@ -640,6 +642,8 @@ figure figcaption {
   padding: 0px 20px;
   border-radius: 10px;
 }
+}
+
 
 .logo-img {
   height: 24px;
