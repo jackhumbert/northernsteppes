@@ -538,6 +538,7 @@
     font-size: 12px;
     text-align: center;
     line-height: 24px;
+    clear: both;
   }
   .footer span {
     margin-left: 1px;
@@ -623,6 +624,10 @@
 .button.full {
   width: 100%;
   text-align: center;
+}
+
+.button.white {
+  color: #fff;
 }
 
 figure figcaption {

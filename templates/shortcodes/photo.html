@@ -1,4 +1,4 @@
 <figure>
-<img src="{{ url}}" alt="{{ body | markdown(inline=true) | striptags }}"/>
-<figcaption>{{ body | markdown(inline=true) | safe }}</figcaption>
+<img src="{{ url}}" {% if body %}alt="{{ body | markdown(inline=true) | striptags }}" {% endif %}/>
+{% if body %}<figcaption>{{ body | markdown(inline=true) | safe }}</figcaption>{% endif %}
 </figure>
