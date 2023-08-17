@@ -175,6 +175,10 @@
         </main>
 
         <footer class="footer">
+            <span><a href="{{ get_url(path="bylaws") }}">Bylaws</a></span>
+            <span>&middot;</span>
+            <span><a href="{{ get_url(path="code-of-conduct") }}">Code of Conduct</a></span>
+            <br />
             <span>&copy; {{ now() | date(format="%Y") }} <a href="{{ get_url(path="", trailing_slash=false ) }}">{{ config.title }}</a></span>
             <span>&middot;</span>
             <span>Powered by <a href="https://www.getzola.org" rel="noopener" target="_blank">Zola</a>️</span>
