@@ -19,7 +19,7 @@
     --radius: 8px;
   
     --theme: #fff;
-    --entry: #fff;
+    --entry: #f3f3f3;
     --primary: rgba(0, 0, 0, 0.88);
     --secondary: rgba(0, 0, 0, 0.56);
     --tertiary: rgba(0, 0, 0, 0.16);
@@ -618,7 +618,7 @@
   font-size: 14px;
   display: inline-block;
   line-height: 1;
-  margin: 4px auto;
+  margin-bottom: var(--content-gap);
 }
 .button.full {
   width: 100%;
@@ -635,7 +635,15 @@ figure figcaption {
   float: right;
   width: 33%;
   margin-left: 20px;
+  margin-bottom: 20px;
   background: var(--entry);
   padding: 0px 20px;
   border-radius: 10px;
+}
+
+.logo-img {
+  height: 24px;
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: -3px;
 }

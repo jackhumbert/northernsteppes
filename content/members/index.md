@@ -7,7 +7,7 @@ header = true
 
 ## Blooded Members
 
-These members have paid their dues both in sweat and coin to the Chieftain and the realm. These members will be given voting rights and special privileges with our suppliers. Members will be able to buy equipment at a reduced rate from our preferred armory, Forged Foam. Members will also be given a discount at purchasing clothing from our preferred sewist at Saewyn’s Bazaar.
+These members have paid their dues both in sweat and coin to the Chieftain and the realm. These members will be given voting rights and special privileges with our suppliers. Blooded Members will be able to buy equipment at a reduced rate from our preferred armory, Forged Foam. Blooded Members will also be given a discount at purchasing clothing from our preferred sewist at Saewyn’s Bazaar.
 
 * Sir Adrius
 * BadB

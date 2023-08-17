@@ -120,9 +120,9 @@
         <header class="header">
             <nav class="nav">
                 {% if page %}
-                <p class="logo"><a href="{{ get_url(path="", trailing_slash=false ) }}">{{ config.title }}</a></p>
+                <p class="logo"><a href="{{ get_url(path="", trailing_slash=false ) }}"><img src="{{ get_url(path="logo.png") }}" class="logo-img" />{{ config.title }}</a></p>
                 {% else %}
-                <h1 class="logo"><a href="{{ get_url(path="", trailing_slash=false ) }}">{{ config.title }}</a></h1>
+                <h1 class="logo"><a href="{{ get_url(path="", trailing_slash=false ) }}"><img src="{{ get_url(path="logo.png") }}" class="logo-img" />{{ config.title }}</a></h1>
                 {% endif %}
                 <ul class="menu">
                     {% set index_section = get_section(path="_index.md") %}
