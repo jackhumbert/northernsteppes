@@ -169,8 +169,8 @@
                     <h2>Next Event</h2>    
                     {% set section = get_section(path="events/_index.md") %}
                     {% for page in section.pages | sort(attribute="date") | reverse | slice(end=1) %}
-                    {% if page.extra.image %}<a href="{{ page.permalink }}"><img src="{{ page.extra.image }}" /></a>{% endif %}
-                    <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+                    {% if page.extra.image %}<a href="{{ page.permalink }}"><img src="{{ get_url(path=page.path ~ page.extra.image) }}" /></a>{% endif %}
+                    <h3><a href="{{  page.permalink }}">{{ page.title }}</a></h3>
                     <p>{{ page.date | date(format="%B %e, %Y")}}</p>
                     {% endfor %}
                 </div>
