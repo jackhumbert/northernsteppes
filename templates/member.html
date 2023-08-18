@@ -1,0 +1,40 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+            {% if page.date %}<span class="post-date">Event Start: <time>{{ page.date | date(format="%B %e, %Y at %I:%M %p") }}</time></span>{% endif %}
+        </div>
+    </header>
+    <div class="post-content">
+
+{% set name = ["-", "Proficient", "Adept", "Master"] %}
+    <dl>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#armorsmith") }}">Armorsmith</a></dt><dd>{{ name[page.extra.Armorsmith] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#entertainer") }}">Entertainer</a></dt><dd>{{ name[page.extra.Entertainer] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#blacksmith") }}">Blacksmith</a></dt><dd>{{ name[page.extra.Blacksmith] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#bookbinder") }}">Bookbinder</a></dt><dd>{{ name[page.extra.Bookbinder] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#brewer") }}">Brewer</a></dt><dd>{{ name[page.extra.Brewer] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#candlemaker") }}">Candlemaker</a></dt><dd>{{ name[page.extra.Candlemaker] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#clothier") }}">Clothier</a></dt><dd>{{ name[page.extra.Clothier] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#cook") }}">Cook</a></dt><dd>{{ name[page.extra.Cook] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#fletcher") }}">Fletcher</a></dt><dd>{{ name[page.extra.Fletcher] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#foamsmith") }}">Foamsmith</a></dt><dd>{{ name[page.extra.Foamsmith] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#herald") }}">Herald</a></dt><dd>{{ name[page.extra.Herald] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#herbalist") }}">Herbalist</a></dt><dd>{{ name[page.extra.Herbalist] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#hunter") }}">Hunter</a></dt><dd>{{ name[page.extra.Hunter] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#leatherworker") }}">Leatherworker</a></dt><dd>{{ name[page.extra.Leatherworker] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#magistrate") }}">Magistrate</a></dt><dd>{{ name[page.extra.Magistrate] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#medic") }}">Medic</a></dt><dd>{{ name[page.extra.Medic] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#merchant") }}">Merchant</a></dt><dd>{{ name[page.extra.Merchant] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#scribe") }}">Scribe</a></dt><dd>{{ name[page.extra.Scribe] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#silversmith") }}">Silversmith</a></dt><dd>{{ name[page.extra.Silversmith] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#weaponsmith") }}">Weaponsmith</a></dt><dd>{{ name[page.extra.Weaponsmith] }}</dd>
+        <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#woodworker") }}">Woodworker</a></dt><dd>{{ name[page.extra.Woodworker] }}</dd>
+    </dl>
+    </div>
+</article>
+{% endblock content %}

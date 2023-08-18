@@ -37,27 +37,27 @@ challenges.
 
 ### Non-Combatant Classes
 
-* Armorsmith
-* Entertainer
-* Blacksmith
-* Bookbinder
-* Brewer
-* Candlemaker
-* Clothier
-* Cook
-* Fletcher
-* Foamsmith
-* Herald
-* Herbalist
-* Hunter
-* Leatherworker
-* Magistrate
-* Medic
-* Merchant
-* Scribe
-* Silversmith
-* Weaponsmith
-* Woodworker
+* [Armorsmith](@/proficiencies/non-combat-classes.md#armorsmith)
+* [Entertainer](@/proficiencies/non-combat-classes.md#entertainer)
+* [Blacksmith](@/proficiencies/non-combat-classes.md#blacksmith)
+* [Bookbinder](@/proficiencies/non-combat-classes.md#bookbinder)
+* [Brewer](@/proficiencies/non-combat-classes.md#brewer)
+* [Candlemaker](@/proficiencies/non-combat-classes.md#candlemaker)
+* [Clothier](@/proficiencies/non-combat-classes.md#clothier)
+* [Cook](@/proficiencies/non-combat-classes.md#cook)
+* [Fletcher](@/proficiencies/non-combat-classes.md#fletcher)
+* [Foamsmith](@/proficiencies/non-combat-classes.md#foamsmith)
+* [Herald](@/proficiencies/non-combat-classes.md#herald)
+* [Herbalist](@/proficiencies/non-combat-classes.md#herbalist)
+* [Hunter](@/proficiencies/non-combat-classes.md#hunter)
+* [Leatherworker](@/proficiencies/non-combat-classes.md#leatherworker)
+* [Magistrate](@/proficiencies/non-combat-classes.md#magistrate)
+* [Medic](@/proficiencies/non-combat-classes.md#medic)
+* [Merchant](@/proficiencies/non-combat-classes.md#merchant)
+* [Scribe](@/proficiencies/non-combat-classes.md#scribe)
+* [Silversmith](@/proficiencies/non-combat-classes.md#silversmith)
+* [Weaponsmith](@/proficiencies/non-combat-classes.md#weaponsmith)
+* [Woodworker](@/proficiencies/non-combat-classes.md#woodworker)
 
 ## Basic Combat Styles
 * [Single Sword](@/proficiencies/combat-styles.md#single-sword)

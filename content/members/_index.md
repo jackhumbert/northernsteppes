@@ -1,6 +1,8 @@
 +++
 title = "Members"
 
+page_template = "member.html"
+
 [extra]
 header = true
 +++
