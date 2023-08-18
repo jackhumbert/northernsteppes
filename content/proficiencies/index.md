@@ -5,129 +5,77 @@ title = "Proficiencies"
 header = true
 +++
 
-## Proficiency Process
+## Process
 
-1. Speak to Leadership about training to pass desired proficiency. They will go over rules for said weapon style (If necessary) and either practice with you or point you in the direction of someone to train with.
-2. Return to Leadership with the approval of the trainer, and request to test for the desired proficiency.
+1. Speak to Leadership about training to pass desired proficiency, or to learn more about the RP/Non-Com Classes. They will go over the requirements for what you are interested in and either practice with you or point you in the direction of someone to train with.
+2. Return to Leadership with the approval of the Warden/Seneschal, and request to test for the desired proficiency.
 3. You will fight 1 on 1 with a designated fighter of the required skill level. You will be observed by Leadership, who will make sure you are competent and safe with the weapon style.
 4. You will then continue with the rest of the trials with the weapon style you are testing for, per the standards and requirements listed in this document.
-5. If you pass the tests, you will be awarded the appropriate the appropriate accolade at the following month’s KGC. For the base level styles, you will be able to test as many ranks in one gathering as you want. For the advanced styles, you will only be able to test for one rank per gathering. If you have not passed the test, you will not be able to retest until the next gathering (Unless at an event when if available you may test everyday of the event). You may test as many different styles in a gathering as we are able to provide appropriate challenges.
+5. If you pass the tests, you will be awarded the appropriate accolade at the following month’s KGC. For the base level styles, you will be able to test as many ranks in one gathering as you want. For the advanced styles, you will only be able to test for one rank per gathering. If you have not passed the test, you will not be able to retest until the next gathering (Unless at an event when if available you may test every day of the event). You may test as many different styles in a gathering as we are able to provide appropriate
+challenges.
 
-## Proficiency Styles
+### Basic Classes  
 
-Basic Styles:
-- [Single Blue](#single-blue-proficiency)
-- [Sword & Board](#sword-board-proficiency)
-- [Dual Wield](#dual-wield-proficiency)
+* [Peasant](@/proficiencies/classes.md#peasant)
+* [Savage](@/proficiencies/classes.md#savage)
+* [Harbinger](@/proficiencies/classes.md#harbinger)
 
-Advanced Styles:
-- [Flail](#flail-proficiency)
-- [Red Weapon (Under 6ft.)](#red-proficiency-under-6ft)
-- [Spear](#spear-proficiency)
-- [Polearm (Red over 6ft.)](#polearm-proficiency-6ft-and-over)
-- [Dagger](#dagger-proficiency)
-- [Javelin](#javelin-proficiency)
-- [Archery](#archery-proficiency)
+### Advanced & Prestige Classes  
+
+* Scout  
+    * Archer  
+    * Ranger  
+    * Vanguard  
+* Soldier  
+    * Recruit  
+    * Foot Soldier  
+    * Cavalier  
+* Thief  
+    * Footpad  
+    * Highwayman  
+    * Master Thief  
+
+### Non-Combatant Classes
+
+* Armorsmith
+* Entertainer
+* Blacksmith
+* Bookbinder
+* Brewer
+* Candlemaker
+* Clothier
+* Cook
+* Fletcher
+* Foamsmith
+* Herald
+* Herbalist
+* Hunter
+* Leatherworker
+* Magistrate
+* Medic
+* Merchant
+* Scribe
+* Silversmith
+* Weaponsmith
+* Woodworker
+
+## Basic Combat Styles
+* [Single Sword](@/proficiencies/combat-styles.md#single-sword)
+* [Sword & Board](@/proficiencies/combat-styles.md#sword-board)
+* [Dual Wield/Florentine](@/proficiencies/combat-styles.md#dual-wield)
+
+## Advanced Combat Styles
+* Flail
+* 2-Hand Weapon (Under 6ft)
+* Spear
+* Polearm (Over 6ft)
+* Dagger
+* Archery
+* Javelin
 
 Base proficiency in each style awards the fighter with a braided cord in the designated colors. A fighter may use borrowed weapons to complete the initial rank, but Adept and Master ranks require the fighter to own the weapon style needed.
 
 # Style Breakdowns
-
-## Single Blue Proficiency
-
-This is the first test for a savage of the Northern Steppes.
-
-To pass your first rank in Single Blue, one must be observed using a Single Blue competently and safely on the sideline in a 1 on 1 fight under the supervision of Leadership. The Recruit will then be observed fighting on the field of battle.
-
-### Adept
-
-To gain the rank of Adept Single Blue a Savage must pass 2 trials and both must be passed in order, you will retain credit for passing 1st trial.
-
-* This may only be attempted once per gathering.
-* Must own weapon
-* Unarmored
-
-1. Defeat a proficient opponent also using Single Blue 2 of 3 times.
-2. Defeat 2 proficient opponents using Single Blue.
-    * Opponents must move as a unit and are unarmored.
-
-### Master
-
-To gain the rank Master of Single Blue a Warrior must pass 3 trials, and all must be passed in order, you will retain credit for passing any trial.
-
-* This may only be attempted once per gathering.
-* May call worn armor.
-
-1. Defeat an adept opponent also using Single Blue 3 of 3 times.
-2. Defeat an adept opponent using Sword'n'Board 2 of 3 times.
-3. Defeat 3 opponents, 2 (1 adept and 1 proficient) Single Blue users and 1 adept Sword & Board user.
-    * Opponents must move as a unit and are unarmored.
-
-## Sword & Board Proficiency
-
-* This is the second test for a Savage of the Northern Steppes.
-* Club maybe used in place of Sword
-* May use own weapon, loaner, or borrow.
-
-To pass your first rank in Sword & Board, one must be observed using Sword & Board competently and safely on the sideline in a 1 on 1 fight under the supervision of Leadership. The Recruit will then be observed fighting on the field of battle. 
-
-### Adept
- 
-To gain the rank of Adept Sword & Board a Savage must pass 2 trials and must be passed in order, you will retain credit for passing any trial.
-
-* This may only be attempted once per gathering.
-* Must own weapon
-* Unarmored
-
-1. Defeat a proficient opponent also using Sword & Board 2 of 3 times.
-2. Defeat 2 proficient opponents both using Sword & Board.
-    * Opponents must move as a unit and are unarmored.
-
-### Master
-
-To gain the rank Master of Sword & Board a Warrior must pass 3 trials , and all must be passed in order, you will retain credit for passing any trial.
-
-* This may only be attempted once per gathering.
-* May call worn armor.
-
-1. Defeat an adept opponent also using Sword & Board 3 of 3 times.
-2. Defeat an adept opponent using a separate weapon style (Spear, Polearm, Florentine, Red, etc...) 2 of 3 times.
-3. Defeat 3 opponents, 1 adept Sword & Board and 2 using different weapon styles no shield.(1 adept and 1 proficient)
-    * Opponents must move as a unit and are unarmored.
-
-## Dual Wield Proficiency
-
-* Must own weapon
-
-This proficiency may be gained anytime after Savage level proficiencies have been earned.
-
-To pass your first rank in Dual Wield, one must be observed using dual wielded weapons competently and safely on the sideline in a 1 on 1 fight under the supervision of Leadership. They will then name the Recruit proficient.
-
-### Adept
-
-To gain the rank of Adept, a Savage must pass 2 trials and must be passed in order, you will retain credit for passing any trial.
-
-* This may only be attempted once per gathering.
-* Must own weapon
-* Unarmored
-
-1. Defeat a proficient opponent also using Dual Wield 2 of 3 times.
-
-2. Defeat 2 proficient opponents using D.W.
-    * Opponents must move as a unit and are unarmored.
-
-### Master
-
-To gain the rank Master of D.W. a Warrior must pass 3 Trials, and must be passed in order, you will retain credit for passing any trial.
-
-* This may only be attempted once per gathering.
-* May use back shield or buckler.
-* May call worn armor.
-
-1. Defeat an adept opponent also using D.W. 3 of 3 times.
-2. Defeat an adept opponent using Sword & Board 2 of 3 times.
-3. Defeat 3 opponents 2 using D.W. (1 adept and 1 proficient) and 1 adept using Sword & Board.
-    * Opponents must move as a unit and are unarmored.
 
 ## Flail Proficiency
 
