@@ -1,0 +1,35 @@
+{% macro scout(extra, rank) %}
+{% set names = ["-", "Novice", "Trailrunner", "Master Scout"] %}
+{% set i = 0 %}
+{# Novice #}
+{% if rank > 1 %}
+    {% set_global weapons = 0 %}
+    {% for weapon, value in extra.weapons %}
+        {% if value > 1 %}
+            {% set_global weapons = weapons + 1 %}
+        {% endif %}
+    {% endfor %}
+    {% if weapons >= 2 %}
+        {% set i = 1 %}
+    {% endif %}
+{% endif %}
+{# Trailrunner #}
+{% if i == 1 and rank > 2 and extra.classes.Light_Armor >= 3 %}
+    {% set_global weapons = 0 %}
+    {% for weapon, value in extra.weapons %}
+        {% if value > 1 %}
+            {% set_global weapons = weapons + 1 %}
+        {% endif %}
+    {% endfor %}
+    {% if weapons >= 4 %}
+        {% set i = 2 %}
+    {% endif %}
+{% endif %}
+{# Master Scout #}
+{% if i == 2 and extra.classes.Light_Armor >= 6 %}
+    {% if extra.weapons.Javelin >= 3 or extra.weapons.Archery >= 3 %}
+        {% set i = 3 %}
+    {% endif %}
+{% endif %}
+{{ names[i] }}
+{% endmacro %}

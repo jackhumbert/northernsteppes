@@ -1,29 +1,15 @@
 +++
+title = "Classes"
 +++
 
-# Basic Classes
-
-### Peasant
-* Must have waiver on file
-
-### Savage
-* Must have membership dues paid
-* First Rank in Single Sword / Sword & Board / Rock / Javelin OR start a Non-Combat Class
-
-### Harbinger
-* Must own veteran level garb
-* Achieve first rank in all proficiencies OR reach second rank in a Non-Combat Class
-
-# Advanced Classes
-
-## Scout Class
+## Scout
 
 ### Novice
-* Must be [Savage](@/proficiencies/classes.md#savage) of the Northern Steppes 
+* Must be [Savage](@/proficiencies/index.md#savage) of the Northern Steppes 
 * Adept in two proficiencies
 
 ### Trailrunner
-* [Harbinger](@/proficiencies/classes.md#harbinger) of the Northern Steppes
+* [Harbinger](@/proficiencies/index.md#harbinger) of the Northern Steppes
 * Adept in four proficiencies.
 * Must have 3 points of “Light” armor.
 
@@ -103,14 +89,14 @@ practice.
 
 </div>
 
-## Soldier Class
+## Soldier
 
 ### Recruit
-* [Savage](@/proficiencies/classes.md#savage) of the Northern Steppes
+* [Savage](@/proficiencies/index.md#savage) of the Northern Steppes
 * Two Adept Level Proficiencies (Must be Melee)
 
 ### Foot Soldier
-* [Harbinger](@/proficiencies/classes.md#harbinger) of the Northern Steppes
+* [Harbinger](@/proficiencies/index.md#harbinger) of the Northern Steppes
 * Three Melee Adept Proficiencies and 1 Ranged Adept Proficiencies 
 * Must own Three Points of Armor
 
@@ -253,16 +239,16 @@ practice.
 
 </div>
 
-## Thief Class
+## Thief
 
 Will receive a Thieves challenge from a quartermaster. Ribbons will be handed out to certain people, ribbons cannot be tied, but may be placed in pockets or on ones person. If a Thief is caught, they must wait a week before trying again.
 
 ### Footpad
-* [Savage](@/proficiencies/classes.md#savage) of the Northern Steppes
+* [Savage](@/proficiencies/index.md#savage) of the Northern Steppes
 * Steal 10 Ribbons without being caught
 
 ### Highwayman
-* [Harbinger](@/proficiencies/classes.md#harbinger) of the Northern Steppes
+* [Harbinger](@/proficiencies/index.md#harbinger) of the Northern Steppes
 * Steal 20 Ribbons without being caught
 
 ### Master Thief
