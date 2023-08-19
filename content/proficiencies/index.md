@@ -77,9 +77,9 @@ challenges.
 
 ## Advanced Combat Styles
 * [Flail](@/proficiencies/combat-styles.md#single-sword)
-* [2-Hand Weapon (Under 6ft)](@/proficiencies/combat-styles.md#2-handed-weapon-under-6ft)
+* [2-Hand Weapon (Under 6ft)](@/proficiencies/combat-styles.md#2-handed-weapon)
 * [Spear](@/proficiencies/combat-styles.md#spear)
-* [Polearm (6ft and over)](@/proficiencies/combat-styles.md#polearm-6ft-and-over)
+* [Polearm (6ft and over)](@/proficiencies/combat-styles.md#polearm)
 * [Dagger](@/proficiencies/combat-styles.md#dagger)
 * [Archery](@/proficiencies/combat-styles.md#archery)
 * [Javelin](@/proficiencies/combat-styles.md#javelin)

@@ -1,5 +1,6 @@
 +++
-title =             "Lamp"
+title = "Lamp"
+date =  2007-05-01            
 
 [extra]
 Waiver =            true
@@ -7,32 +8,44 @@ Dues =              true
 Veteran_Garb =      true
 
 [extra.weapons]
-Single_Sword =      2
-Sword_Board =       3
-Dual_Wield =        2
-Flail =             2
-2_Hand_Weapon =     1
-Spear =             1
-Polearm =           1
-Dagger =            2
-Archery =           0
-Javelin =           2
-Rock =              2
+"Single Sword" =    2
+"Sword & Board" =   3
+"Dual Wield" =      2
+"Flail" =           2
+"2 Handed Weapon" = 1
+"Spear" =           1
+"Polearm" =         1
+"Dagger" =          2
+"Archery" =         0
+"Javelin" =         2
+"Rock" =            2
 
 [extra.classes]
 Scout =             0
     Light_Armor =   3
+
 Archer =            0
 Ranger =            0
 Vanguard =          0
+
 Soldier =           0
-Recruit =           0
-Foot_Soldier =      0
-Cavalier =          0
+    Armor =         3
+
+Berserker =         0
+Paladin =           0
+Shaman =            0
+Shieldman =         0
+Spearman =          0
+
 Thief =             0
-Footpad =           0
-Highwayman =        0
-Master_Thief =      0
+    Steal_10 =      true
+    Steal_20 =      false
+    Steal_30 =      false
+    Look_Part =     true
+
+Assassin =           0
+Rogue =        0
+Swashbuckler =      0
 
 [extra.professions]
 Armorsmith =        1

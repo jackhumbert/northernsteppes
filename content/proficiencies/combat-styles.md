@@ -129,7 +129,9 @@ To gain rank of Master Flail a Warrior must pass 3 trials, and must be passed in
 3. Defeat 3 opponents 2 adept Flail & Board and 1 using different weapon style no shield.(1 adept and 1 proficient)
     * Opponents must move as a unit and are unarmored.
 
-## 2-Handed Weapon (Under 6ft)
+## 2-Handed Weapon
+
+Under 6ft
 
 ### Proficient
 
@@ -195,7 +197,7 @@ To gain rank of Master Spear a Warrior must pass 3 trials, and must be passed in
 3. Defeat 3 opponents 1 adept Sword & Board and 2 using different weapon style no shield.(1 adept and 1 proficient)
     * Opponents must move as a unit and are unarmored.
 
-## Polearm (6ft and over)
+## Polearm
 
 ### Proficient
 

@@ -656,3 +656,25 @@ figure figcaption {
   margin-right: 6px;
   margin-bottom: -3px;
 }
+
+@media (min-width:768px) {
+  .two-columns {
+    column-count: 2;
+    column-gap: 20px;
+  }
+  .two-columns dl {
+    -webkit-column-break-inside: avoid;
+  }
+  .two-columns dt {
+    width: 50%;
+  }
+  .two-columns dd {
+    width: 50%;
+  }
+}
+
+.dues-paid {
+  width: 18px;
+  height: 18px;
+  margin-bottom: -4px;
+}

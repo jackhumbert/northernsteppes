@@ -33,3 +33,64 @@
 {% endif %}
 {{ names[i] }}
 {% endmacro %}
+
+{% macro soldier(extra, rank) %}
+{% set names = ["-", "Recruit", "Foot Soldier", "Cavalier"] %}
+{% set i = 0 %}
+{# Recruit #}
+{% if rank > 1 %}
+    {% set_global weapons = 0 %}
+    {% for weapon, value in extra.weapons %}
+        {% if value > 1 and weapon !=  "Javelin" and weapon != "Archery" %}
+            {% set_global weapons = weapons + 1 %}
+        {% endif %}
+    {% endfor %}
+    {% if weapons >= 2 %}
+        {% set i = 1 %}
+    {% endif %}
+{% endif %}
+{# Foot Soldier #}
+{% if i == 1 and rank > 2 and extra.classes.Armor >= 3 %}
+    {% set_global melee = 0 %}
+    {% set_global ranged = 0 %}
+    {% for weapon, value in extra.weapons %}
+        {% if value > 1 %}
+            {% if weapon !=  "Javelin" and weapon != "Archery" %}
+                {% set_global melee = melee + 1 %}
+            {% else %}
+                {% set_global ranged = ranged + 1 %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% if melee >= 3 and ranged >= 1 %}
+        {% set i = 2 %}
+    {% endif %}
+{% endif %}
+{# Cavalier #}
+{% if i == 2 and extra.classes.Armor >= 6 %}
+    {% for weapon, value in extra.weapons %}
+        {% if value >= 3 %}
+            {% set i = 3 %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+{{ names[i] }}
+{% endmacro %}
+
+{% macro thief(extra, rank) %}
+{% set names = ["-", "Footpad", "Highwayman", "Master Thief"] %}
+{% set i = 0 %}
+{# Footpad #}
+{% if rank > 1 and extra.classes.Steal_10 %}
+    {% set i = 1 %}
+{% endif %}
+{# Highwayman #}
+{% if i == 1 and rank > 2 and extra.classes.Steal_20 %}
+    {% set i = 2 %}
+{% endif %}
+{# Master Thief #}
+{% if i == 2 and extra.classes.Steal_30 and extra.classes.Look_Part %}
+    {% set i = 3 %}
+{% endif %}
+{{ names[i] }}
+{% endmacro %}
