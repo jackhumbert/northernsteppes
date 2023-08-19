@@ -86,7 +86,8 @@
 <p>
     <dl>
         {% for profession, level in page.extra.professions %}
-            <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#" ~ profession | slugify) }}">{{ profession }}</a></dt><dd>{{ name[level] }}</dd>
+        {% set slug = profession | slugify %}
+            <dt><a href="{{ get_url(path="proficiencies/non-combat-classes#" ~ slug) }}">{{ profession }}</a></dt><dd>{{ name[level] }}</dd>
         {% endfor %}
     </dl>
     </p>
