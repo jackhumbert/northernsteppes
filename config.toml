@@ -14,3 +14,19 @@ build_search_index = false
 highlight_code = false
 
 [extra]
+
+# 0 == Sunday
+
+[[extra.practices]]
+location_name = "Shoaff Park by the Splash Pad"
+location_coords = "41.144078,-85.097697"
+day_of_the_week = 0
+time_of_day = [12, 30]
+length = 5
+
+[[extra.practices]]
+location_name = "East Swinney Park by the Disc Golf"
+location_coords = "41.073488,-85.160017"
+day_of_the_week = 5
+time_of_day = [17, 0]
+length = 5
