@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://jackhumbert.github.io/northernsteppes"
+base_url = "https://northernsteppes.com"
 title = "The Northern Steppes"
 
 # Whether to automatically compile all Sass files in the sass directory
