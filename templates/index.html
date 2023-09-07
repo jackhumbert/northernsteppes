@@ -152,7 +152,7 @@
         "></div>
         {% endif %}
 
-        <main class="main">
+        <main class="main {% if section.extra.banner %}banner{% endif %}">
             {% block content %}
             {% set is_first_page = true %}
             {% if paginator is defined %}

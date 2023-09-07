@@ -154,10 +154,14 @@
     max-width: calc(var(--nav-width) + var(--gap) * 2);
     margin-left: auto;
     margin-right: auto;
+    gap: 10px;
+    padding: 15px 0px;
+    overflow-x: auto;
+    min-height: var(--header-height);
   }
   .nav a {
     display: block;
-    line-height: var(--header-height);
+    line-height: 25px;
   }
   .logo,
   .menu {
@@ -172,7 +176,6 @@
     display: flex;
     list-style: none;
     word-break: keep-all;
-    overflow-x: auto;
   }
   .menu li + li {
     margin-left: var(--gap);
@@ -189,6 +192,9 @@
     margin-left: auto;
     margin-right: auto;
     padding: var(--gap);
+  }
+  .main.banner {
+    min-height: calc(100vh - 200px - var(--header-height) - var(--footer-height));
   }
   .page-header {
     margin-bottom: 24px;
@@ -648,7 +654,11 @@ figure figcaption {
   border-radius: 10px;
 }
 }
-
+@media (max-width: 750px) {
+.practice-information h3 {
+  margin-top: 0px;
+}
+}
 
 .logo-img {
   height: 24px;
