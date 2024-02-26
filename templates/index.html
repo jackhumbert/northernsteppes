@@ -165,12 +165,12 @@
             <div class="post-content">
                 {{ section.content | safe }}
                 
-                <div style="float:right; clear: right; margin-left: 20px; width: 33%; margin-top: -20px">
+                {# <div style="float:right; clear: right; margin-left: 20px; width: 33%; margin-top: -20px"> #}
                     <h2>Next Event</h2>    
                     {% set section = get_section(path="events/_index.md") %}
                     {% for page in section.pages | sort(attribute="date") | reverse %}
                     <div id="{{ page.slug }}">
-                        {% if page.extra.image %}<a href="{{ page.permalink }}"><img src="{{ get_url(path=page.path ~ page.extra.image) }}" /></a>{% endif %}
+                        {% if page.extra.image %}<a href="{{ page.permalink }}"><img src="{{ get_url(path=page.path ~ page.extra.image) }}" style="max-width: 320px"/></a>{% endif %}
                         <h3><a href="{{  page.permalink }}">{{ page.title }}</a></h3>
                         <p>{{ page.date | date(format="%B %e, %Y")}}</p>
                     </div>
@@ -180,9 +180,9 @@
                         }
                     </script>
                     {% endfor %}
-                </div>
+                {# </div> #}
 
-                <h2>Latest News</h2>      
+                {# <h2>Latest News</h2>      
                 {% set section = get_section(path="news/_index.md") %}
                 {% for page in section.pages | sort(attribute="date") | reverse | slice(end=1) %}
                 <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
@@ -197,7 +197,7 @@
                         {% if paginator.next %}<a class="next" href="{{ paginator.next }}">Next →</a>{% else %}<!--Hidden Next-Button-->{% endif %}
                     </nav>
                 </footer>
-                {% endif %}
+                {% endif %} #}
             </div>
             {% endblock content %}
         </main>

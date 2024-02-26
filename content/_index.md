@@ -16,7 +16,7 @@ We post all our news and events to our Facebook group and Discord, so join one (
 ## Want to get started fighting? 
 
 1. [Read the Belegarth Rules](https://www.belegarth.com/rules)
-2. [Sign our E-waiver](https://docs.google.com/forms/d/e/1FAIpQLSf-AJHKh700hk1_VfvkvwKweod-ngWRfg2FHmFJNmy3kcTnnw/viewform)
+2. [Sign our E-waiver](https://docs.google.com/forms/d/e/1FAIpQLSeWSaM0wGwSxCuOdeSFKaWaOsjjS5p2sHvx0W6BcuVlEKFBHg/viewform)
 3. [Attend a Practice](@/practice.md)
 
 <!--
