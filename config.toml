@@ -25,8 +25,8 @@ time_of_day = [13, 0]
 length = 4
 
 [[extra.practices]]
-location_name = "East Swinney Park by the Disc Golf"
-location_coords = "41.073488,-85.160017"
+location_name = "Shoaff Park by the Splash Pad"
+location_coords = "41.144078,-85.097697"
 day_of_the_week = 5
 time_of_day = [18, 0]
 length = 3
