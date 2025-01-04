@@ -13,7 +13,7 @@
 ## Executive Leadership
 
 * President: Meat
-    * Community building, larger numbers at practices. Coming together at events. Being there for each other. Support & kind.
+    * Community building, larger numbers at practices. Coming together at events. Being there for each other. Support & be kind.
 * Vice President: Mouse
     * Ditto. Get numbers growing. More traveling to events - all together at events. More build days, more hanging out.
 * Treasurer: Luna
@@ -28,7 +28,7 @@
 * PR Coordinator: Kam & Goose
 * War Council Rep: Magnus & Kaigar?
 
-Slate vote of passes at 17
+Slate vote of passes at 16
 
 ## Proposals
 
