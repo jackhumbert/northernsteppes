@@ -76,8 +76,7 @@ executive leaders tasks and are similarly unpaid volunteers.
     * 5.6.1. Will be the main point of contact for all organization-level media coverage and manage all social media channels officially associated with The Northern Steppes
     * 5.6.2. Responsible for creating content on social media platforms, overseeing social campaigns and increasing social media followers for the chapter.
 * 5.7. Belegarth War Council Representatives
-    * 5.7.1. Two representatives are to be elected from the body of dues paying members to
-    represent the Northern Steppes
+    * 5.7.1. Two representatives are to be elected from the body of dues paying members to represent the Northern Steppes
     * 5.7.2. Ideally nominees should attend outside realm events in addition to Northern Steppes events.
     * 5.7.3. Communicate with leadership and act as national liaisons to the realm, facilitating the will of the Northern Steppes in an unbiased manner.
     * 5.7.4. If left vacant will be chosen from primary and supplemental leadership.
