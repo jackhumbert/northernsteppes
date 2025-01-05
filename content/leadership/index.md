@@ -51,7 +51,7 @@ The Treasurer fulfills the charter requirements of Bookkeeper.
 
 ## Quartermaster
 
-**Soa**
+**Soa Faer Dorlingwe**
 
 Along with the Treasurer, the Quartermaster is one of the cornerstones of the Realm. It is their duty to keep log of the personnel in the War Band and the War Band’s equipment. If equipment is lost or damaged it is their duty to fix it, and if there is an influx of new membership it is their responsibility to purchase a reasonable amount of equipment. It is also their responsibility to maintain and update the records of the realm. As one of the few members of the War Band who is learned in their letters, they also takes notes at all meetings. The Quartermaster is also voted on by the blooded members and therefore represents the Northern Steppes in all they do.
 
