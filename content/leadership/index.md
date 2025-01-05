@@ -43,7 +43,7 @@ The Vice President fulfills the charter requirements as Administrative Assistant
 
 ## Treasurer
 
-**Luna**
+**Apprentice Luna**
 
 While the President leads the charge and the Vice President hoists the banner, the Treasurer has a tight grip on the reins. An army marches on its stomach and fodder is purchased with coin. It is the job of the Treasurer to manage the coffers and keep track of the War Band’s vast wealth. Yet the Treasurer is not relegated to the sidelines, the Treasurer is a fierce warrior and they are often scene charging into the fray with a fury. The Treasurer is also voted on by the blooded members and therefore represents the Northern Steppes in all they do.
 
