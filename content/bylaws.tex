@@ -1,32 +1,25 @@
 \documentclass[12pt]{article}
 \title{The Northern Steppes Bylaws}
-% \date{December 27, 2022}
+\author{Byron ``Magnus Broadaxe'' Econ}
+\date{January 3, 2024}
 
-\usepackage{parskip}
+% \usepackage{parskip}
 \usepackage{enumitem}
 \usepackage[margin=1in]{geometry}
 
-\newlist{level}{enumerate}{10}
-\setlist[level]{label*=\arabic*., font=\maybeHeadItem}
-\newcommand{\headItem}[1]{\global\isHeadtrue\item {\bfseries #1}}
-\newcommand{\maybeHeadItem}{%
-    \ifisHead\bfseries\global\isHeadfalse\fi%
-}
-\newif\ifisHead
+\newlist{level}{enumerate}{3}
+\setlist[level]{label*=\arabic*.}
 
-\NewDocumentCommand{\subject}{ m }{%
-    \begin{center}
-        \bfseries%
-        Re: #1%
-    \end{center}
-}%
-\NewDocumentCommand{\name}{ m }{{\bfseries #1}}
-\NewDocumentCommand{\email}{ m }{ #1 }
+% \newcommand{\headItem}[1]{\global\isHeadtrue\item {\bfseries #1}}
+% \newcommand{\maybeHeadItem}{%
+%     \ifisHead\bfseries\global\isHeadfalse\fi%
+% }
+% \newif\ifisHead%
 
-\renewcommand{\thesection}{Article \Roman{section}}
+\renewcommand{\thesection}{Article \Roman{section}.}
 
 \begin{document}
-% \maketitle
+\maketitle
 
 \section{Name and Purpose}
 \begin{level}

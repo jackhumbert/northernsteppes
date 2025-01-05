@@ -1,0 +1,9 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\tocsection{Article I.}{\csname a:TocLink\endcsname{1}{x1-1000Article I.}{QQ2-1-1}{Name and Purpose}}{3}\relax 
+\doTocEntry\tocsection{Article II.}{\csname a:TocLink\endcsname{1}{x1-2000Article II.}{QQ2-1-2}{Rule sets}}{3}\relax 
+\doTocEntry\tocsection{Article III.}{\csname a:TocLink\endcsname{1}{x1-3000Article III.}{QQ2-1-3}{Membership}}{4}\relax 
+\doTocEntry\tocsection{Article IV.}{\csname a:TocLink\endcsname{1}{x1-4000Article IV.}{QQ2-1-4}{Officers}}{5}\relax 
+\doTocEntry\tocsection{Article V.}{\csname a:TocLink\endcsname{1}{x1-5000Article V.}{QQ2-1-5}{Meetings and Quorum}}{8}\relax 
+\doTocEntry\tocsection{Article VI.}{\csname a:TocLink\endcsname{1}{x1-6000Article VI.}{QQ2-1-6}{Amendments}}{9}\relax 
+\doTocEntry\tocsection{Article VII.}{\csname a:TocLink\endcsname{1}{x1-7000Article VII.}{QQ2-1-7}{Enabling Act}}{9}\relax 
+\par 

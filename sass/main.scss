@@ -8,3 +8,14 @@
     color: var(--primary);
     box-shadow: 0 1px 0 var(--primary);
 }
+
+.post-content dt {
+    width: 50px;
+    font-weight: 700
+}
+
+.post-content dd {
+    width: calc(100% - 50px);
+    margin-left: 0;
+    padding-left: 10px
+}

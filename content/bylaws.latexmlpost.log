@@ -1,0 +1,23 @@
+latexmlpost (LaTeXML version 0.8.8) paginating /Users/jackhumbert/Github/northernsteppes/content/bylaws.html
+Warning:uninitialized:value Use of uninitialized value value in subroutine entry
+	at at /opt/homebrew/Cellar/latexml/0.8.8_1/libexec/lib/perl5/LaTeXML/Post.pm line 980
+	In Post::Document[] /Users/jackhumbert/Github/northernsteppes/content/bylaws.html
+Warning:uninitialized:value Use of uninitialized value value in subroutine entry
+	at at /opt/homebrew/Cellar/latexml/0.8.8_1/libexec/lib/perl5/LaTeXML/Post.pm line 980
+	In Post::Document[] /Users/jackhumbert/Github/northernsteppes/content/bylaws.html
+Warning:uninitialized:value Use of uninitialized value value in concatenation (.) or string
+	at at /opt/homebrew/Cellar/latexml/0.8.8_1/libexec/lib/perl5/LaTeXML/Post.pm line 982
+	In Post::Document[] /Users/jackhumbert/Github/northernsteppes/content/bylaws.html
+Warning:uninitialized:value Use of uninitialized value value in concatenation (.) or string
+	at at /opt/homebrew/Cellar/latexml/0.8.8_1/libexec/lib/perl5/LaTeXML/Post.pm line 982
+	In Post::Document[] /Users/jackhumbert/Github/northernsteppes/content/bylaws.html
+Error:I/O: Failed to load DTD  at 
+	skipping validation
+	In Post::Document[] /Users/jackhumbert/Github/northernsteppes/content/bylaws.html
+(post-processing...
+(Scan  processing...
+Scan: DBStatus: 3/0 objects
+ 0.00 sec)
+(CrossRef  processing... 0.00 sec)
+(Writer  processing... 0.00 sec) 0.00 sec)
+Postprocessing complete 4 warnings; 1 error (See /Users/jackhumbert/Github/northernsteppes/content/bylaws.latexmlpost.log) (reqd. 0.20s)

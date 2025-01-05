@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2023.9.4)  5 NOV 2024 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2023.9.4)  5 NOV 2024 11:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -85,18 +85,18 @@ version 2022-07-05-14:37
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/tex4ht.sty
 version 2023-02-03-14:48
 l.864 --- TeX4ht warning --- nonprimitive \everypar ---
---- needs --- tex4ht bylaws ---
+--- needs --- tex4ht 2024-11-05-bylaws ---
 \tmp:cnt=\count268
-\openout15 = `bylaws.tmp'.
+\openout15 = `2024-11-05-bylaws.tmp'.
 
-(./bylaws.tmp)
+(./2024-11-05-bylaws.tmp)
 \tmp:dim=\skip51
 --------------------------------------
 --- Note --- for XML code, use the command line option `xml' or `xhtml'
 --------------------------------------
-(./bylaws.xref)
+(./2024-11-05-bylaws.xref)
 \:refout=\write3
-\openout3 = `bylaws.xref'.
+\openout3 = `2024-11-05-bylaws.xref'.
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2023-08-31-15:04
@@ -199,12 +199,13 @@ o use custom a CSS design
 --- Note --- for linear crosslinks of pages, use the command line option `next'
 
 --------------------------------------
-\openout15 = `bylaws.4ct'.
+\openout15 = `2024-11-05-bylaws.4ct'.
 
 \:tocout=\write4
-\openout4 = `bylaws.4tc'.
+\openout4 = `2024-11-05-bylaws.4tc'.
 
-(bylaws.4tc) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+(2024-11-05-bylaws.4tc) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/
+html4.4ht
 version 2023-08-31-15:04
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2023-04-02-08:01
@@ -366,8 +367,8 @@ File: l3backend-dvips.def 2023-04-19 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count270
 \g__pdf_backend_link_int=\count271
 \g__pdf_backend_link_sf_int=\count272
-) (./bylaws.aux)
-\openout1 = `bylaws.aux'.
+) (./2024-11-05-bylaws.aux)
+\openout1 = `2024-11-05-bylaws.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -417,7 +418,7 @@ LaTeX Font Info:    ... okay on input line 24.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
---- file bylaws.css ---
+--- file 2024-11-05-bylaws.css ---
 ) [1
 
 ] [2]
@@ -425,19 +426,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 22.
-[3] [4] [5] [6] [7] [8] [9] (./bylaws.aux)
+[3] [4] [5] [6] [7] [8] [9] (./2024-11-05-bylaws.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5139 strings out of 474935
- 68556 string characters out of 5759838
+ 5140 strings out of 474935
+ 68727 string characters out of 5759838
  1925804 words of memory out of 5000000
  26626 multiletter control sequences out of 15000+600000
  560998 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,6n,77p,898b,638s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bylaws.dvi (9 pages, 33592 bytes).
+Output written on 2024-11-05-bylaws.dvi (9 pages, 33672 bytes).
