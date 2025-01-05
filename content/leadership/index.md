@@ -35,7 +35,7 @@ The President fulfills the charter requirements as Administrator. In the case th
 
 ## Vice President
 
-**Mouse**
+**Squire Mouse Theninduín Sawbones**
 
 The Vice President is the voice and executor of the President’s authority. Carrying the banner into battle, the Vice President shows their steadfast dedication by always keeping beside the President regardless of how thick the fighting gets. If the President shall fall, the Vice President shall take their place and continue the fight. As they are the Second-in-Command, a Vice President must be of the same caliber and quality of the President so that they can take their place. The Vice President is also voted on by the blooded members and therefore represents the Northern Steppes in all they do.
 

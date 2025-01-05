@@ -7,7 +7,7 @@ header = true
 
 # Elections 2025
 
-23 adults in attendence, total
+23 adults in attendance, total
 
 ## News
 
