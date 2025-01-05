@@ -1,3 +1,10 @@
++++
+title = "Leadership"
+
+[extra]
+header = true
++++
+
 # Elections 2025
 
 23 adults in attendence, total
