@@ -1,8 +1,5 @@
 +++
-title = "Leadership"
-
-[extra]
-header = true
+title = "Elections 2025"
 +++
 
 # Elections 2025
