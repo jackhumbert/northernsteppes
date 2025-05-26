@@ -35,7 +35,7 @@ The President fulfills the charter requirements as Administrator. In the case th
 
 ## Vice President
 
-**Squire Mouse Theninduín Sawbones**
+**Sir Mouse Zirinshaktân**
 
 The Vice President is the voice and executor of the President’s authority. Carrying the banner into battle, the Vice President shows their steadfast dedication by always keeping beside the President regardless of how thick the fighting gets. If the President shall fall, the Vice President shall take their place and continue the fight. As they are the Second-in-Command, a Vice President must be of the same caliber and quality of the President so that they can take their place. The Vice President is also voted on by the blooded members and therefore represents the Northern Steppes in all they do.
 
@@ -77,7 +77,7 @@ Magnus at Gathering of the Clans 2015
 
 ## Event Coordinator
 
-**Magnus Broadaxe**
+**Sir Magnus Broadaxe**
 
 Whenever the Steppes has a gathering it is the role of the Event Coordinator to gather the masses. Upon guidance from the President they plan any and all activities for the War Band during these events. The event coordinator is entrusted with the ability to delegate parts of their authority on other members to help ease their burden. The Event Coordinator is also voted on by the blooded members and therefore represents the Northern Steppes in all they do.
 
