@@ -1,0 +1,130 @@
+{% import "ranks.html" as ranks %}
+{% extends "section.html" %}
+
+{% block content %}
+
+{% set rank_names = ["Unranked", "Peasant", "Savage", "Harbinger"] %}
+{% set year = now() | date(format="%Y") %}
+{% set_global rank = 0 %}
+
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">Current Members</h1>
+    </header>
+    <div class="post-content">{{ section.content | safe }}</div>
+    {% if paginator %}
+        {% set pages = paginator.pages %}
+    {% else %}
+        {% set pages = section.pages %}
+    {% endif %}
+
+    {% for page in pages %}
+
+    {% if page.extra.dues[year] %}
+
+        {% if page.extra.Waiver %}
+            {% set_global rank = 1 %}
+            {% if page.extra.Dues %}
+                {% if page.extra.weapons['Single Sword'] > 0 and page.extra.weapons['Sword & Board'] > 0 and page.extra.weapons.Rock > 0 and page.extra.weapons.Javelin > 0 %}
+                    {% set_global rank = 2 %}
+                    {% if page.extra.Veteran_Garb %}
+                        {% for prof, value in page.extra.professions %}
+                            {% if value >= 2 and page.extra.Veteran_Garb %}
+                                {% set_global rank = 3 %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if rank != 3 %}
+                            {% set_global rank = 3 %}
+                            {% for weapon, value in page.extra.weapons %}
+                                {% if value == 0 %}
+                                    {% set_global rank = 2 %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endif %}
+                {% else %}
+                    {% for prof, value in page.extra.professions %}
+                        {% if value >= 1 %}
+                            {% set_global rank = 2 %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+
+
+        <div>
+            <a aria-label="post link to {{ page.title }}" href="{{ page.permalink }}">
+                <span><b>{{ page.title }}</b></span>
+                <span class="post-meta">
+                {{ rank_names[rank] }}
+                </span>
+            </a>
+        </div>
+   
+    {% endif %}
+    {% endfor %}
+
+
+
+    <header class="post-header">
+    <h2>Past Members</h2>
+    </header>
+
+    {% for page in pages %}
+
+    {% if not page.extra.dues[year] %}
+
+        {% if page.extra.Waiver %}
+            {% set_global rank = 1 %}
+            {% if page.extra.Dues %}
+                {% if page.extra.weapons['Single Sword'] > 0 and page.extra.weapons['Sword & Board'] > 0 and page.extra.weapons.Rock > 0 and page.extra.weapons.Javelin > 0 %}
+                    {% set_global rank = 2 %}
+                    {% if page.extra.Veteran_Garb %}
+                        {% for prof, value in page.extra.professions %}
+                            {% if value >= 2 and page.extra.Veteran_Garb %}
+                                {% set_global rank = 3 %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if rank != 3 %}
+                            {% set_global rank = 3 %}
+                            {% for weapon, value in page.extra.weapons %}
+                                {% if value == 0 %}
+                                    {% set_global rank = 2 %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endif %}
+                {% else %}
+                    {% for prof, value in page.extra.professions %}
+                        {% if value >= 1 %}
+                            {% set_global rank = 2 %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+
+        <div>
+            <a aria-label="post link to {{ page.title }}" href="{{ page.permalink }}">
+                <span><b>{{ page.title }}</b></span>
+                {# <span class="post-meta">
+                {{ rank_names[rank] }}
+                </span> #}
+            </a>
+        </div>
+
+    {% endif %}
+    {% endfor %}
+
+    <footer class="post-footer">
+        {% if section.taxonomies and section.taxonomies.tags %}
+        <ul class="post-tags">
+        {% for tag in section.taxonomies.tags %}
+            <li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </footer>
+</article>
+{% endblock content %}
