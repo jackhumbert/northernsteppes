@@ -1,9 +1,9 @@
 +++
 title = "Blue Weapon Construction"
 description = "How to build a basic blue weapon, with images"
-summary = "An in-depth guide for building a Belegarth weapon"
 
 [extra]
+summary = "An in-depth guide for building a Belegarth weapon"
 image = "social_preview.webp"
 +++
 
