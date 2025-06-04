@@ -1,5 +1,5 @@
 +++
-title = "Basic Weapon Construction"
+title = "Blue Weapon Construction"
 description = "How to build a basic blue weapon, with images"
 +++
 
