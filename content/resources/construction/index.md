@@ -29,6 +29,8 @@ If your core is hollow, you'll need to fill the holes at the ends with something
 
 Foam is best held together using flexible cements, such as contact cements like Barge or DAP Weldwood. When using these, you need to apply the glue thoroughly to both surfaces and let them dry for <strong>15-20 minutes</strong>. After assembling, pressure is required to ensure full contact between the mating surfaces - in traditional uses, the items are clamped together for a period of time, but this often isn't needed here, and could potentially damage the foam, so isn't recommended.
 
+When attaching foam pieces that have minimal surface area, such as weapon tip caps, you can poke the mating surfaces with an awl or small flathead screwdriver to create more surface area for the glue to attach to. Be sure not to poke the entire way through the foam piece, as this will reduce the effectiveness of the foam.
+
 Glue is depicted as yellow in this guide, and is show on both surfaces whenever possible.
 
 ## Tip Construction (stabby/green)
