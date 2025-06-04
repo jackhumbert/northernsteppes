@@ -1,5 +1,6 @@
 +++
 title = "Garb"
+description = "Vendors, Tutorials, Materials"
 +++
 
 ## Vendors

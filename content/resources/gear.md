@@ -1,5 +1,6 @@
 +++
 title = "Gear"
+description = "Vendors, Guides & Materials"
 +++
 
 ## Vendors
