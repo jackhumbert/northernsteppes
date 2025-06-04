@@ -26,8 +26,10 @@
         {% endif %}
         {% if page.extra.image %}
         {% set path = page.relative_path | replace(from="index.md", to="") %}
-        {% set image = resize_image(path=path ~ page.extra.image, width=1200, height=630, op="fill", format="auto", quality=75) %}
-        <meta property='og:image' content="{{ image.url }}"/>
+        {# {% set image = resize_image(path=path ~ page.extra.image, width=1200, height=630, op="fill", format="auto", quality=75) %} #}
+        {# {% set image_path = image.url %} #}
+        {% set image_path = get_url(path=path ~ page.extra.image) %}
+        <meta property='og:image' content="{{ image_path }}"/>
         <meta property='og:image:width' content="1200"/>
         <meta property='og:image:height' content="630"/>
         {% else %}
