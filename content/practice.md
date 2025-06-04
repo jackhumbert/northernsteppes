@@ -7,9 +7,11 @@ header = true
 
 {{ practice() }}
 
-Practices are held on two different days and at two different locations to accommodate different schedules. Typically, Sunday practices have a larger attendance - averaging 30 people during the peak of the season. Battles are more structured here, and we generally run a couple different scenario/objective battles, sometimes using rope to mark out different battlefield layouts or obstacles.
+Practices are usually held every Sunday, weather & temperature permitting. During the summer (mainly while daylight saving time is in effect), we also schedule a weekday practice. See the Facebook page or Discord for more details about when the next practice is being held.
 
-Friday practices are more causal, but can be a good opportunity to get to know other members, or work on a particular setup when sparring.
+Typically, Sunday practices have a larger attendance - averaging 30 people during the peak of the season. Battles are more structured here, and we generally run a couple different scenario/objective battles, sometimes using rope to mark out different battlefield layouts or obstacles.
+
+Weekday practices are more causal, but can be a good opportunity to get to know other members, or work on a particular setup when sparring. 
 
 ## Games we play
 
