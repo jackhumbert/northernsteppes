@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://northernsteppes.com"
 title = "The Northern Steppes"
-description = "Belegarth chapter in Northeast Indiana"
+description = "Northeast Indiana's Belegarth chapter, originally founded as a Dagorhir chapter in 2004."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true

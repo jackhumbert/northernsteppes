@@ -58,7 +58,7 @@ We post all our news and events to our Facebook group and Discord, so join one (
 <div class="card">
     <a href="https://www.belegarth.com/rules">
     <div class="image">
-    <img src="/bmcs.png" />
+    <img src="/bmcs.png" alt="Belegarth Logo" />
     </div>
     1. Read the Belegarth Rules
     </a>
