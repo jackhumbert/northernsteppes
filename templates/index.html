@@ -47,7 +47,7 @@
         <meta property='og:image:width' content="1200"/>
         <meta property='og:image:height' content="630"/>
         {% else %}
-            {% for asset in page.assets | sort() | reverse() -%}
+        {% for asset in page.assets | sort() | reverse() -%}
             {%- if asset is matching("[.](jpg|png|jpeg)$") -%}
             {% set image = resize_image(path=asset, width=1200, height=630) %}
                 <meta property='og:image' content="{{ image.url }}"/>
@@ -64,6 +64,9 @@
         {% else %}
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ get_url(path="", trailing_slash=false) }}">
+        <meta property='og:image' content="{{ get_url(path=config.extra.image, trailing_slash=false) }}"/>
+        <meta property='og:image:width' content="1200"/>
+        <meta property='og:image:height' content="630"/>
         {% endif %}
 
         {% if page %}
