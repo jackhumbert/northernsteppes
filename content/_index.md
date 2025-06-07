@@ -1,6 +1,6 @@
 +++
 [extra]
-banner = "battle.jpeg"
+banner = "battle.webp"
 +++
 
 <style>
