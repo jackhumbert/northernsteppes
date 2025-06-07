@@ -1,6 +1,7 @@
 # The URL the site will be built for
 base_url = "https://northernsteppes.com"
 title = "The Northern Steppes"
+description = "Belegarth chapter in Northeast Indiana"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -14,6 +15,7 @@ build_search_index = false
 highlight_code = false
 
 [extra]
+full_title = "The Northern Steppes - Foam Fighting in Fort Wayne, Indiana"
 
 # 0 == Sunday
 

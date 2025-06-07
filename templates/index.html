@@ -4,7 +4,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{% if page.title %}{{ config.title }} - {{ page.title }}{% else %}{{ config.title }}{% endif %}</title>
+        {% if page.title %}
+        <title>{{ config.title }} - {{ page.title }}</title>
+        {% else %}
+        <title>{{ config.extra.full_title }}</title>
+        {% endif %}
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -12,6 +16,14 @@
         <!-- Enable responsiveness on mobile devices-->
         <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+        {% if page.summary %}
+        <meta name="description" content="{{ page.summary | striptags }}">
+        {% elif page.extra.summary %}
+        <meta name="description" content="{{ page.extra.summary | striptags }}">
+        {% else %}
+        <meta name="description" content="{{ config.description }}">
+        {% endif %}
 
         <!-- Standard meta tags -->
         {% if page.extra.author %}<meta name="author" content="{{ page.extra.author }}">{% endif %}
@@ -23,10 +35,8 @@
         <meta property="og:url" content="{{ get_url(path=page.path, trailing_slash=false) }}">
         {% if page.summary %}
         <meta property="og:description" content="{{ page.summary | striptags }}">
-        {% else %}
-            {% if page.extra.summary %}
-            <meta property="og:description" content="{{ page.extra.summary | striptags }}">
-            {% endif %}
+        {% elif page.extra.summary %}
+        <meta property="og:description" content="{{ page.extra.summary | striptags }}">
         {% endif %}
         {% if page.extra.image %}
         {% set path = page.relative_path | replace(from="index.md", to="") %}
@@ -54,6 +64,12 @@
         {% else %}
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ get_url(path="", trailing_slash=false) }}">
+        {% endif %}
+
+        {% if page %}
+        <link rel="canonical" href="{{ get_url(path=page.path, trailing_slash=false) }}" />
+        {% else %}
+        <link rel="canonical" href="{{ get_url(path="", trailing_slash=false) }}" />
         {% endif %}
 
         <!-- CSS -->
