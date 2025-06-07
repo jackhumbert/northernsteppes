@@ -22,7 +22,7 @@
         {% elif page.extra.summary %}
         <meta name="description" content="{{ page.extra.summary | striptags }}">
         {% else %}
-        <meta name="description" content="{{ config.description }}">
+        <meta name="description" content="{{ config.description | striptags  }}">
         {% endif %}
 
         <!-- Standard meta tags -->
