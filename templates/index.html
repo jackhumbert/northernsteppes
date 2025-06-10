@@ -64,9 +64,9 @@
         {% else %}
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ get_url(path="", trailing_slash=false) }}">
-        <meta property='og:image' content="{{ get_url(path=config.extra.image, trailing_slash=false) }}"/>
-        <meta property='og:image:width' content="1200"/>
-        <meta property='og:image:height' content="630"/>
+        <meta property='og:image' content="{{ get_url(path=config.extra.google, trailing_slash=false) }}"/>
+        <meta property='og:image:width' content="800"/>
+        <meta property='og:image:height' content="800"/>
         {% endif %}
 
         {% if page %}
