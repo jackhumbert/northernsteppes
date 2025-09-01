@@ -1,4 +1,4 @@
-# The Northern Steppes
+# Northern Steppes
 
 ## Overview
 

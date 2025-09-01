@@ -1,6 +1,6 @@
 # The URL the site will be built for
 base_url = "https://northernsteppes.com"
-title = "The Northern Steppes"
+title = "Northern Steppes"
 description = "Northeast Indiana's Belegarth chapter, originally founded as a Dagorhir chapter in 2004."
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -15,7 +15,7 @@ build_search_index = false
 highlight_code = false
 
 [extra]
-full_title = "The Northern Steppes - Foam Fighting in Fort Wayne, Indiana"
+full_title = "Northern Steppes - Foam Fighting in Fort Wayne, Indiana"
 image = "social.webp"
 google = "battle_small.webp"
 

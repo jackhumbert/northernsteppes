@@ -43,7 +43,7 @@ banner = "battle.webp"
 
 {{ practice() }}
 
-The Northern Steppes is Northeast Indiana's [Belegarth](https://www.belegarth.com/) chapter based out of Fort Wayne, Indiana. Originally founded as a Dagorhir chapter in 2004, the group voted to transition to Belegarth in June 2021, but many of our members participate in other role-playing games ranging from lighter LARPs similar to D&D, all the way to full-armor [SCA](https://www.sca.org/). We are a tight-knit family focused on fighting, feasting, and family.
+Northern Steppes is Northeast Indiana's [Belegarth](https://www.belegarth.com/) chapter based out of Fort Wayne, Indiana. Originally founded as a Dagorhir chapter in 2004, the group voted to transition to Belegarth in June 2021, but many of our members participate in other role-playing games ranging from lighter LARPs similar to D&D, all the way to full-armor [SCA](https://www.sca.org/). We are a tight-knit group focused on fighting, feasting, and family.
 
 We post all our news and events to our Facebook group and Discord, so join one (or both!) below to stay up-to-date with what's happening!
 
@@ -116,6 +116,6 @@ At your first practice, someone from leadership will go over the rules with you 
 
 <!--
 {% photo(url="2017-group-photo.jpg") %}
-The Northern Steppes at War! 2017, photo credit [Silverleaf Photography](https://www.instagram.com/silverleaf_photos/)
+Northern Steppes at War! 2017, photo credit [Silverleaf Photography](https://www.instagram.com/silverleaf_photos/)
 {% end %}
 -->
