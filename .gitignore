@@ -1,2 +1,8 @@
 .DS_Store
 public/
+*.aux
+*.fdb_latexmk
+*.fls
+*.loc
+*.soc
+*.synctex.gz

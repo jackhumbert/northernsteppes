@@ -1,19 +1,37 @@
 \documentclass[12pt]{article}
+
+\usepackage[explicit]{titlesec}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{Article \thesection. #1}
+
+% \usepackage[active,tightpage]{preview}
+% \renewcommand{\PreviewBorder}{1in}
+
 \title{The Northern Steppes Bylaws}
 % \date{December 27, 2022}
 
-\usepackage{parskip}
+\usepackage{enumerate}
 \usepackage{enumitem}
 \usepackage[margin=1in]{geometry}
-\usepackage[markup=bfit, addedmarkup=it, deletedmarkup=sout, commentmarkup=footnote]{changes}
+\usepackage{xcolor}
+% \usepackage[margin=0.75in, right=3.25in, marginparwidth=2.5in, marginparsep=0.25in]{geometry}
+\usepackage[markup=bfit, addedmarkup=it, deletedmarkup=sout, commentmarkup=footnote, authormarkup=none]{changes}
+% \usepackage[markup=bfit, addedmarkup=it, deletedmarkup=sout, commentmarkup=margin, authormarkup=none, todonotes={textwidth=2.5in}]{changes}
+% \usepackage{marginnote}
+
+\usepackage[skip=1pt plus1pt, indent=40pt]{parskip}
+% \setcommentmarkup{\marginpar{#1}}
 
 \newlist{level}{enumerate}{10}
-\setlist[level]{label*=\arabic*., font=\maybeHeadItem}
-\newcommand{\headItem}[1]{\global\isHeadtrue\item {\bfseries #1}}
-\newcommand{\maybeHeadItem}{%
-    \ifisHead\bfseries\global\isHeadfalse\fi%
-}
-\newif\ifisHead
+\setlist[level]{label*=\arabic*.}
+% \setlist[enumerate]{labelsep=*, leftmargin=1.5pc}
+\setlist[level,1]{label = \thesection.\arabic*.,ref = \thesection.\arabic*}
+
+% \newcommand{\headItem}[1]{\global\isHeadtrue\item {\bfseries #1}}
+% \newcommand{\maybeHeadItem}{%
+%     \ifisHead\bfseries\global\isHeadfalse\fi%
+% }
+% \newif\ifisHead
 
 \NewDocumentCommand{\subject}{ m }{%
     \begin{center}
@@ -24,34 +42,46 @@
 \NewDocumentCommand{\name}{ m }{{\bfseries #1}}
 \NewDocumentCommand{\email}{ m }{ #1 }
 
-\renewcommand{\thesection}{Article \Roman{section}}
+% \renewcommand{\thesection}{Article \arabic{section}}
+% \renewcommand{\thesection}{Article \Roman{section}}
+
+% \newcommand{\Newpage}{\end{preview}\begin{preview}}
+\newcommand{\newpart}[2][]{\colorbox{green!40}{#2}\expandafter\ifx\expandafter\relax\detokenize{#1}\relax\else\textnormal{\footnote{#1}}\fi}
 
 \begin{document}
+% \begin{preview}
+
 % \maketitle
+
+% \name{}
 
 % \listofchanges
 
 \section{Name and Purpose}
 \begin{level}
-\item This organization shall be known as The Northern Steppes, a Chapter of Belegarth Medieval Combat Society.
-\item The purpose of this organization is to participate in the Foam Sport Belegarth, which includes running regularly scheduled practices and events.
+    \item This organization shall be known as \newpart[``The'' is optional]{The Northern Steppes}, a realm of Belegarth Medieval Combat Society.
+    \item The purpose of this organization is to participate in the Foam Sport Belegarth, which includes running regularly scheduled practices and events.
+    \item \newpart{All participants must abide by the Code of Conduct established by the Council.}
+\end{level}
+
+\section{Definitions}
+\begin{level}
+    \item \textbf{Event}. Any scheduled happening arranged by the realm: weekly practices, build days, special events, member meetings.
+    \item \textbf{Special Event}. A larger, fighting-based event that happens outside of the weekly practices, where those outside of the realm are invited.
+    \item \textbf{Troll}. The check-in set up at special events where attendees can pay, sign-in, and get information about the event.
 \end{level}
 
 \section{Rule sets}
 \begin{level}
     \item The Northern Steppes shall follow the Belegarth rule set established under the Book of War (BoW), as approved by the Belegarth War Council.
-    \item Chapter specific rulings are as follows;
+    \item Realm-specific rules are as follows:
     \begin{level}
-        \item In addition to the BoW rule of age limits, Children ages 12-15 that are approved by the
-Chapter leadership after discussion with their parent(s)/guardian(s) may attend on the
-field practices only with their parent(s)/guardian(s) present after signing a physical waiver.
-        \item A fillable electronic version of the Northern Steppes' Belegarth waivers are made
-available online. These waivers are available only to those ages 18 and up.
-        \item Northern Steppes allows rigid metal knees and elbow armor.
-        \item Healing Poems
+        \item \textbf{Age Limits}. In addition to the BoW rule of age limits, Children ages 12--15 that are approved by the Council after discussion with their parent(s)/guardian(s) may attend on the field practices only with their parent(s)/guardian(s) present after signing a physical waiver.
+        \item \textbf{Electronic Wavier}. A fillable electronic version of the Northern Steppes' Belegarth waivers are made available online. These waivers are available only to those ages 18 and up.
+        \item \textbf{Rigid Armor}. Rigid metal knee and elbow armor is allowed.
+        \item \textbf{Healing Poems}. A poem of Healing must be recited or read aloud. The minimum length of a poem of healing is 180 syllables and must be approved at event check-in.
         \begin{level}
-            \item A poem of Healing must be recited or read aloud. The minimum length of a poem of healing is 180 syllables and must be approved at event check-in.
-            \item The healer cannot heal \replaced{themselves}{her/himself} or their own equipment
+            \item The healer cannot heal \replaced{themselves}{her/himself} or their own equipment.
             \item To heal a person, the Healer must be in direct physical contact with the injured person. The healer may only heal one person at a time.
             \item A healer may not heal a person while either are under direct attack. If the healer or injured person is attacked or distracted, or contact is broken for any reason, the entire healing poem must be read or recited again.
             \item When the healer completes reading the healing poem, all wounds and any items held by the wounded fighter are healed or repaired (i.e. armor, bow, shield, etc)
@@ -61,104 +91,252 @@ available online. These waivers are available only to those ages 18 and up.
 
 \section{Membership}
 \begin{level}
-    \item Anyone may participate in practices, membership is a nonrefundable \$30 seasonal fee.
+    \item \textbf{Benefits}. While anyone may attend events and use loaner gear, participants may annually register as a Member of the Northern Steppes and be granted the following benefits:
     \begin{level}
-        \item If an individual is unable to pay the \$30, a reasonable rate of volunteering as first deemed appropriate by the executive branch may be accepted.
-        \item Cut off date for paying dues for the current season will be no later than April 30th. Exceptions and arrangements may be made with approval from the \replaced{Treasurer}{Seneschal}. New members, having joined within the year, may have this deadline extended to one week prior to the voting meeting.
+        \item Priority use of loaner gear
+        \item Use of any Council-specified, Member-only loaner gear
+        \item Voting rights during the annual meeting and other voting events
+        \item Entrance to all Northern Steppes non-overnight events, such as:
+        \begin{level}
+            \item A singular day at GotC (longer stays will require the difference to be paid)
+            \item Build days that may have an entry fee
+        \end{level}
     \end{level}
-    \item Paid members are given voting-rights during voting-specific meetings.
-    \item Membership fees pay to create and maintain the website.
-    \item Membership fees are also applied to loaner equipment and props (i.e. cones, ropes, etc.), site fees, and event costs.
-    \item Members will have a discount to Forged Foam through the chapter club account. Orders must be placed with the chapter, group orders must be a minimum of \$300.
-    \item Members will get a 10\% discount to Saewyn's Bazaar
-    \item Membership is revoked in the condition an individual is removed from the chapter. Member and participant removal follows the Belegarth Bylaws under Article Four.
+    \item \textbf{Registration}. Members may not register in the period between the closing of bylaw amendments mentioned in Article~\ref{amendments}. and the end-of-voting during the annual meeting, and any dues paid during this period will cause their registration to be delayed until the end-of-voting during the annual meeting. Otherwise, registration happens as soon as dues are paid.
+    \item \textbf{Term}. Membership lasts from registration until the next end-of-voting at the annual meeting. 
+    \item \textbf{Dues}. The standard annual rate is \$30.
+    \begin{level}
+        \item To encourage registering at the beginning of a season, any registration prior to May 1st will receive a discount of \$5. 
+        \item If dues are unaffordable by someone wanting to become a Member, the Council may approve an explicit amount of volunteering, completed prior to their registration, in lieu of dues.
+    \end{level}
+    \item \textbf{Uses}. Usage of funds is decided by the Council with information supplied by the Treasurer, and may include, but is not limited to:
+    \begin{level}
+        \item Event or site reservation costs and fees.
+        \item Props or equipment needed for events.
+        \item Website hosting/maintenance.
+        \item Loaner gear creation, repair, and maintenance.
+    \end{level}
+    \item \textbf{Removal}. If a Member is banned from the realm, their membership is automatically revoked, with no refundment of dues.
 \end{level}
 
-\section{Officers}
+\section{\newpart{Leadership}}
 \begin{level}
-    \item \deleted[comment=This is no longer needed as we're no longer a Dagorhir chapter]{In accordance with the ``Chapter Terms of Contract: Rights and Responsibilities''} All positions are on a completely unpaid volunteer basis. The positions of \replaced{President}{Chieftain}, \replaced{Vice President}{Hand of the Chieftain},  \replaced{and Treasurer}{Treasurer and Seneschal} shall comprise the executive body. All positions are elected by quorum, with a quorum of vote.
-    \item Executive Body Leaders
+    \item Leadership consists of both Council officers and anyone fulfilling a supplemental role, and all are required to:
     \begin{level}
-        \item \replaced{President}{Chieftain}
+        \item Be members of the realm at the time of their election.
+        \item Remain unpaid volunteers.
+        \item Be clearly identifiable at realm-hosted special events.
+    \end{level}
+    \item \textbf{The Council} is the main decision-making entity of the realm. 
         \begin{level}
-            \item The \replaced{President}{Chieftain} fulfills the charter requirements as Administrator. In the case that no other leaders are available or elected to fulfill a responsibility, they fall to the \replaced{President}{Chieftain}.
-            \item The President will work towards ensuring NS tax exempt status
-            \item The President will ensure that the nonprofit status of the Northern Steppes (once obtained) is maintained and shall work with the Treasurer to file all tax returns and reports required to maintain Northern Steppes tax exempt status
-        \end{level}
-        \item \replaced{Vice President}{Hand of the Chieftain}
+            \item \textbf{Voting}. The Council may vote on day-to-day matters for which there is no clear consensus.
+            \begin{level}
+                \item In all Council votes, a quorum is three officers. 
+                \item Voting may be done in person or online.
+                \item All vote results should be recorded by the Secretary and announced to non-present Council officers. 
+            \end{level}
+            \item \textbf{Responsibilities}:
+            \begin{level}
+                \item Welcome newcomers to the sport/realm.
+                \item Consistently attend realm's events---practices, special events, build days, and meetings---for a recognizable portion of the duration. 
+                \begin{level}
+                    \item Attending practice a minimum of every other week is imperative to maintain these positions. 
+                    \item Prolonged absences are to be allowed only for vacations, illness, and other unordinary circumstances. 
+                    \item If an officer does not show at scheduled practice for three consecutive weeks without communicating a written explanation to the Council or the realm as a whole, they are to be dismissed and a replacement is to be selected by the remaining officers. 
+                    \item Council officers who work are expected to adjust their schedules such that they can regularly attend practice and fulfill their commitment to the realm.
+                \end{level}   
+                \item Have moderating privileges on the forums and are to take responsibility managing as needed.
+                \item Have regular access to the internet and email so they are aware of incoming email and group activity on forums (Facebook, Discord, et al).
+                \item Meet for at least 15 minutes every month.
+                \item Organize a yearly meeting as described in Article~\ref{yearly_meeting}.
+            \end{level}
+            \item \textbf{Powers}:
+            \begin{level}
+                \item Create a new supplemental role with a majority vote.
+                \begin{level}
+                    \item Must have a title and explicit written responsibilities.
+                    \item Must be communicated to realm members.
+                \end{level}
+                \item Create a new supplemental role with a majority vote as long as it (a) has a title and explicit written responsibilities, and (b) is communicated to realm members.
+                \item Assign any role (vacant or occupied) for the duration of a special event with a majority vote.
+                \begin{level}
+                    \item Must be a realm member.
+                    \item Must be communicated to special event attendees.
+                \end{level}
+                \item Appoint any vacant role with a majority vote.
+                \begin{level}
+                    \item Must be a realm member.
+                    \item Must be communicated to realm members.
+                \end{level}
+                \item Vacate any role (with responsibilities defaulting to the officer described) with a \(\frac{4}{5}\) vote.
+                \begin{level}
+                    \item Must be communicated to realm members.
+                \end{level}
+            \end{level}
+        \item \textbf{Removal}. If a petition signed by a quorum of realm members to impeach an officer is presented to the Council, that officer has one month to turn over responsibilities to the appropriate leader once verified by leadership other than the individual impeached. Abstained signatures are only considered "nay" in this scenario; this is in exception to Article VI Section 1.1.
+    \end{level}
+    \item \textbf{Council Officers}:
+    \begin{level}
+    \item \textbf{President}
         \begin{level}
-            \item The \replaced{Vice President}{Hand of the Chieftain} fulfills the charter requirements as Administrative Assistant. This role will primary to run the field and facilitate new participants into joining; other tasks assigned in the \replaced{President}{Chieftain}'s absence are fulfilled by the \replaced{Vice President}{Hand of the Chieftain}.
+            \item Serve as coordinator of the realm and the Council.
+            \item Plan for the future of the realm. 
+            \item Outline what needs done for recruitment, event planning, etc. then assign people to do it individually or through committees/teams.
+            \item Work towards obtaining tax exempt status.
+            \item Work with the Treasurer to file all tax returns and reports required to maintain tax exempt status.
+            \item Establish standard operating procedures to:
+            \begin{level}
+                \item Run the yearly meeting
+                \item Handle the yearly election or any other voting matter
+            \end{level}
         \end{level}
-        \item \deleted{Seneschal/}Treasurer
-        \begin{level} 
-            \item The \replaced{Treasurer}{Seneschal} fulfills the charter requirements of Bookkeeper. Their requirements for attendance are waived, except for meetings.
-            \item The \replaced{Treasurer}{Seneschal} will accurately record all financial records for the Northern Steppes
-            \item The \replaced{Treasurer}{Seneschal} will collect all receipts from Northern Steppes
-            \item The \replaced{Treasurer}{Seneschal} will file any appropriate tax information as needed.
-            \item The \replaced{Treasurer}{Seneschal} will prepare an annual financial report for public release.
-            \item The \replaced{Treasurer}{Seneschal} will establish and maintain a checking account for the Northern Steppes
-            \item The \replaced{Treasurer}{Seneschal} will review and remit payment for debts incurred by the Northern Steppes
+        \item \textbf{Vice President}
+        \begin{level}
+            \item Fulfill the duties of the President in their absence, or as delegated.
+            \item Fill the gaps in duties described in these bylaws.
+            \item Encouraged to also run for a supplemental role.
+        \end{level}
+        \item \textbf{Secretary}
+        \begin{level}
+            \item Waiver gathering and tracking.
+            \item Update realm information as needed.
+            \item Keep record of former information.
+            \item Run or train a realm member to run Troll at events.
+            \begin{level}
+                \item Council should be notified \& aware of who is trained to run Troll.
+            \end{level}
+            \item Take notes/minutes during meetings.
+            \item Store/update any standard operating procedures.
+            \item Establish standard operating procedures for:
+            \begin{level}
+                \item Operating Troll at events
+            \end{level}
+        \end{level}
+        \item \textbf{Event Officer}
+        \begin{level}
+            \item Plan and schedule realm events, delegating duties where necessary:
+            \begin{level}
+                \item Weekly practices
+                \item Special events
+                \begin{level}
+                    \item Longer day or overnight/multi-day events
+                    \item “Kill Grill Chill” potluck-type events
+                \end{level}
+                \item Build days
+                \item Yearly meetings
+            \end{level}
+            \item In collaboration with the Public Relations Coordinator, inform realm members and potential attendees about realm events.
+            \item The Council is to be consulted on any subgroup sponsorship when budgeting and planning for the realm event.
+            \item Coordinate a presence at other events, and serve as/delegate a campmaster
+            \item Establish standard operating procedures for event-specific tasks, such as:
+            \begin{level}
+                \item Opening/setting-up
+                \item Daily happenings \& officer responsibilities
+                \item Closing/cleaning-up
+            \end{level}
+        \end{level}
+        \item \textbf{Safety Officer}
+        \begin{level}
+            \item Be familiar with the Belegarth Book of War, and all realm-specific rules.
+            \item Educate participants on rules and safety, including realm-specific rules. 
+            \item Head security at special events.
+            \item Oversee weapons-check at special events.
+            \item Test and approve weapons at practices.
+            \item Establish standard operating procedures for:
+            \begin{level}
+                \item marshalling, including the training of
+                \item Weapon checking, including the training of
+            \end{level}
+        \end{level}
+\end{level}
+\item \textbf{Supplemental Roles} are elected or appointed, and default to a specific Council officer that inherits the responsibilities if the role is vacant. A Council officer or realm member may have multiple roles.
+\begin{level}
+    \item A realm member may be assigned in an acting capacity for the duration of a special event by the Council if the role is vacant or the existing holder is otherwise unable to perform their duties.
+    \item \textbf{Treasurer}. Secretary if vacant. Has the following responsibilities:
+    \begin{level}
+        \item Accurately record all financial records.
+        \item Collect all receipts.
+        \item File any appropriate tax information as needed.
+        \item Prepare an annual financial report for public release.
+        \item Establish and maintain a checking account.
+        \item Review and remit payment for debts incurred.
+        \item Establish standard operating procedures for:
+        \begin{level}
+            \item Filing taxes
+            \item Reimbursing purchases
         \end{level}
     \end{level}
-
-    \item Vacancies
-    \begin{level} 
-        \item In the case of a vacancy in the \replaced{President}{Chieftain} position, the \replaced{Vice President}{Hand of the Chieftain} will be promoted. If both positions are unfilled, the \replaced{Treasurer}{Seneschal} is temporarily promoted to \replaced{President}{Chieftain}. In the condition two or more positions are empty, an emergency voting meeting must be held.
+    \item \textbf{Quartermaster}. Safety Officer if vacant. Has the following responsibilities:
+    \begin{level}
+        \item Be knowledgeable on gear construction techniques.
+        \item Maintain loaner gear and replace/repair as needed.
+        \item Store or designate an officer to store loaner gear, which should be brought to all fighting-based events.
+        \item Attend and lead realm build-days, and in collaboration with the Event Officer, plan them.
+        \item Establish instructions for recommended weapon construction.
     \end{level}
-
-    \item Attendance and Impeachment
-    \begin{level} 
-        \item The positions of leadership must attend chapter events and practices for a recognizable portion of the duration of the event or practice. This would preferably be all but in cases of emergency it may be waived.
-        \item Failure to attend would be grounds for impeachment for leadership roles.
-        \item If a quorum of the total voting membership presents a signed petition to impeach a leader named under Article \replaced{V}{IV}, that leader has one month to turn over responsibilities to the appropriate leader once verified by leadership other than the individual impeached. Abstained signatures are only considered ``nay'' in this scenario; this is in exception to Article \replaced{V}{IV} Section 1.1.
-    \end{level}
-
-    \item Supplementary Leaders
-    \begin{level} 
-        \item Supplementary Leaders are additional leadership positions that are present to assist in the
-    executive leaders tasks and are similarly unpaid volunteers.
-        \item Quartermaster
-        \begin{level} 
-            \item The tasks of the Quartermaster are secretarial in nature and include: waiver gathering and tracking, updating chapter information to the most current, keeping records of former information, heading troll at events, note-taking during meetings.
-            \item Along with the Warden will be responsible for maintaining loaner weapons and gear and replacing/repairing as needed.
-        \end{level}
-        \item Warden
-        \begin{level} 
-            \item The tasks of the Warden are to welcome newcomers to participate in the sport by providing them with basic rules information and safety instructions. The Warden also heads security at events.
-            \item Along with the Quartermaster will be responsible for maintaining loaner weapons and gear and replacing/repairing as needed.
-        \end{level}
-        \item Event Coordinator
-        \begin{level} 
-            \item Tasked with leading, appointing, planning and scheduling of Northern Steppes events. Executive leadership is to be consulted on any subgroup sponsorship when budgeting and planning for the chapter event.
-        \end{level}
-        \item Webmaster
-        \begin{level} 
-            \item The webmaster will be in charge of the Northern Steppes Webpage, making any and all changes to the page that the \replaced{President}{Chieftain} has mandated.
-            \item The webmaster will report to the \replaced{President}{Chieftain} so that the President may deal with any issues dealing with the page in question.
-            \item The Webmaster in coordination with the Public Relations Coordinator promotes the ease of access to Northern Steppes on both the website and social media channels.
-        \end{level}
-        \item Public Relations Coordinator
-        \begin{level} 
-            \item Will be the main point of contact for all organization-level media coverage and manage all social media channels officially associated with the Northern Steppes
-            \item Responsible for creating content on social media platforms, overseeing social campaigns and increasing social media followers for the chapter.
+    \item \textbf{Battlemaster}. Event Officer if vacant. Has the following responsibilities:
+    \begin{level}
+        \item Plan, design, and construct field battles for fighting-based events, in collaboration with the Event Officer.
+        \item Assign marshals, after marshals are trained by the Safety Officer.
+        \item Serve as or appoint a head marshal, who:
+        \begin{level}
+            \item Run field battles and getting fighters to the field.
+            \item Schedule breaks during battles to ensure fighters get adequate hydration.
         \end{level}
     \end{level}
+    \item \textbf{Public Relations Coordinator}. President if vacant. Has the following responsibilities:
+    \begin{level}
+        \item Main point of contact for all organization-level media coverage.
+        \item Have access to and regularly check the realm email account.
+        \item Manage all social media channels officially associated with the realm.
+        \item Create and post content on social media platforms.
+        \item Oversee outreach campaigns (physical, social media, email, etc) such as:
+        \begin{level}
+            \item Dues renewal reminder
+            \item Event announcement \& promotion
+            \item General recruiting
+            \item Election and voting motions
+        \end{level}
+        \item Work to increase social media followers for the realm.
+        \item Establish standard operating procedures for:
+        \begin{level}
+            \item Creating content.
+            \item Launching social media/email campaigns.
+        \end{level}
+    \end{level}
+    \item \textbf{Webmaster}. Secretary if vacant. Has the following responsibilities:
+    \begin{level}
+        \item Maintain the realm website, making any and all changes, as mandated by the Council.
+        \item In collaboration with Event Coordinator, update special event pages on the website.
+        \item In collaboration with the Secretary, maintain an email list for realm members, special event attendees, etc.
+        \item In collaboration with the Public Relations Coordinator, facilitate email campaigns.
+        \item In collaboration with the President, communicate voting efforts.
+    \end{level}
+    \item \textbf{Belegarth War Council Representative (2)}. President (primary) and Vice President (alternate) if vacant. Has the following responsibilities:
+    \begin{level}
+        \item Represent the realm in the Belegarth War Council.
+        \item Attend outside special events in addition to realm events.
+        \item Communicate with the Council and act as national liaisons to the realm, facilitating the will of the realm in an unbiased manner.
+        \item Must have the means to access the internet at least one per week.
+        \item May not serve as a National Belegarth Officer.
+        \item Strive to be respondent, communicating any abstains in voting to the Council.
+    \end{level}
+\end{level}
 
 \end{level}
 
-\section{Meetings and Quorum}
+\section{Meetings and Quorum}\label{yearly_meeting}
 \begin{level} 
-    \item Quorum is defined as 75\% of the subject in question. This applies to all votes and attendance of meetings.
+    \item  During any Member meeting, the quorum shall consist of 50\% of Members.
     \begin{level} 
-        \item Regarding votes, a vote of “abstain” is not included in the total count of those present for that issue.
+        \item Any vote of “abstain” will affect quorum.
     \end{level}
-    \item A single annual meeting is required for the chapter as a whole to elect new leadership positions, as determined by previous leadership. This should be completed before the end of January each year.
-    \item Executive leadership must meet monthly for as little as 15 minutes.
+    \item A single annual meeting is required for the realm as a whole to elect new leadership positions. The date, time, and location is determined by the Council. This should be completed before the end of January each year.
 \end{level}
 
-\section{Amendments}
+\section{Amendments}\label{amendments}
 \begin{level} 
-    \item All Amendments to this document shall be introduced in writing to the executive body. They shall be submitted no less than three (3) weeks prior to an membership meeting. Quorum of those in attendance is necessary for them to pass.
+    \item All Amendments to this document shall be introduced in writing to the Council. They shall be submitted no less than three (3) weeks prior to a Member meeting. A simple majority of those present is required for any amendment to pass.
 \end{level}
 
 \section{Enabling Act}
@@ -166,4 +344,5 @@ available online. These waivers are available only to those ages 18 and up.
     \item This set of Bylaws is officially ratified when approved through the current voting membership.
 \end{level}
 
+% \end{preview}
 \end{document}
