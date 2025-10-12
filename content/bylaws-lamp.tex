@@ -33,14 +33,14 @@
 % }
 % \newif\ifisHead
 
-\NewDocumentCommand{\subject}{ m }{%
-    \begin{center}
-        \bfseries%
-        Re: #1%
-    \end{center}
-}%
-\NewDocumentCommand{\name}{ m }{{\bfseries #1}}
-\NewDocumentCommand{\email}{ m }{ #1 }
+% \NewDocumentCommand{\subject}{ m }{%
+%     \begin{center}
+%         \bfseries%
+%         Re: #1%
+%     \end{center}
+% }%
+% \NewDocumentCommand{\name}{ m }{{\bfseries #1}}
+% \NewDocumentCommand{\email}{ m }{ #1 }
 
 % \renewcommand{\thesection}{Article \arabic{section}}
 % \renewcommand{\thesection}{Article \Roman{section}}
@@ -61,11 +61,11 @@
 \begin{document}
 % \begin{preview}
 
-% \maketitle
+\maketitle
 
 % \name{}
 
-% \listofchanges
+% \listofchanges{}
 
 \section{Name and Purpose}
 \begin{level}
@@ -214,7 +214,7 @@
             \item Fill the gaps in duties described in these bylaws.
             \item Encouraged to also run for a supplemental role.
         \end{level}
-        \item \textbf{Secretary}
+        \item \textbf{Secretary}\comment{Created from Quartermaster's responsibilities}
         \begin{level}
             \item Waiver gathering and tracking.
             \item Update realm information as needed.
@@ -269,6 +269,8 @@
 \end{level}
 \item \textbf{Supplemental Roles} are elected or appointed, and default to a specific Council officer that inherits the responsibilities if the role is vacant. A Council officer or realm member may have multiple roles.\label{supplemental_roles}
 \begin{level}
+    \item Supplemental role-holders may appoint a shadow to their duties. This shadow may step in as a second in the absence of the primary role-holder.
+
     \item A realm member may be assigned in an acting capacity for the duration of a special event by the Council via Section~\ref{temp_role} if the role is vacant or the existing holder is otherwise unable to perform their duties.
     \item \textbf{Treasurer}. Vice President if vacant. Has the following responsibilities:
     \begin{level}
@@ -305,7 +307,7 @@
     \item \textbf{Public Relations Coordinator}. President if vacant. Has the following responsibilities:
     \begin{level}
         \item Main point of contact for all realm-level media coverage.
-        \item Have access to and regularly check the realm email account.
+        \item \added{Have access to and regularly check the realm email account.}
         \item Manage all social media channels officially associated with the realm.
         \item Create and post content on social media platforms.
         \item Oversee outreach campaigns (physical, social media, email, etc) such as:
@@ -351,14 +353,14 @@
         \item The date, time, and location is determined by the Council. 
         \item This should be completed before the end of January each year.
     \end{level}
-    \item During any member meeting, \replaced[comment=This wording was confusing\, and as our membership grows\, it may be impossible to get this many people. 50\% + 1 is safer\, and will prevent minority rule.]{the quorum shall consist of 50\% of members plus one (1)}{Quorum is defined as 75\% of the subject in question. This applies to all votes and attendance of meetings. Regarding votes, a vote of “abstain” is not included in the total count of those present for that issue}.
+    \item During any member meeting, \replaced[comment={This wording was confusing, and as our membership grows, it may be impossible to get this many people. 50\% + 1 is safer, more common, and will prevent minority rule.}]{the quorum shall consist of 50\% of members plus one (1)}{Quorum is defined as 75\% of the subject in question. This applies to all votes and attendance of meetings. Regarding votes, a vote of “abstain” is not included in the total count of those present for that issue}.
 \end{level}
 
 \section{Amendments}\label{amendments}
 \begin{level} 
     \item Amendments to this document shall be introduced to the Council in writing, no less than three (3) weeks prior to a member meeting. 
     \item \added{Amendments should be read and discussed during a member meeting prior to voting, if quorum is present.}
-    \item \replaced[comment=This wording was unclear\, as quorum is usually applied to the number of votes needed for a valid vote\, not pass/fail status.]{A \emph{Simple Majority} is required for an amendment to pass.}{Quorum of those in attendance is necessary for them to pass.}
+    \item \replaced[comment={This wording was unclear, as quorum is usually applied to the number of votes needed for a valid vote, not pass/fail status.}]{A \emph{Simple Majority} is required for an amendment to pass.}{Quorum of those in attendance is necessary for them to pass.}
 \end{level}
 
 \section{Enabling Act}
