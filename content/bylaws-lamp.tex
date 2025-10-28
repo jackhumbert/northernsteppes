@@ -1,5 +1,35 @@
 \documentclass[12pt]{article}
 
+\usepackage{iftex}
+
+% --- LOAD FONT SELECTION AND ENCODING BEFORE LOADING LWARP ---
+
+\ifPDFTeX
+\usepackage{lmodern}            % pdflatex or dvi latex
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\else
+\usepackage{fontspec}           % XeLaTeX or LuaLaTeX
+\fi
+
+% --- LWARP IS LOADED NEXT ---
+\usepackage[
+%   HomeHTMLFilename=index,     % Filename of the homepage.
+%   HTMLFilename={node-},       % Filename prefix of other pages.
+%   IndexLanguage=english,      % Language for xindy index, glossary.
+%   latexmk,                    % Use latexmk to compile.
+%   OSWindows,                  % Force Windows. (Usually automatic.)
+%   mathjax,                    % Use MathJax to display math.
+]{lwarp}
+% \boolfalse{FileSectionNames}  % If false, numbers the files.
+
+% --- LOAD PDFLATEX MATH FONTS HERE ---
+
+% --- OTHER PACKAGES ARE LOADED AFTER LWARP ---
+\usepackage{makeidx} \makeindex
+% \usepackage{xcolor}             % (Demonstration purposes only.)
+
+
 \usepackage[explicit]{titlesec}
 
 \titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{Article \thesection. #1}
@@ -7,7 +37,7 @@
 % \usepackage[active,tightpage]{preview}
 % \renewcommand{\PreviewBorder}{1in}
 
-\title{The Northern Steppes Bylaws}
+\title{Northern Steppes Bylaws}
 % \date{December 27, 2022}
 
 \usepackage{enumerate}
@@ -16,7 +46,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{color,soul}
 % \usepackage[margin=0.75in, right=3.25in, marginparwidth=2.5in, marginparsep=0.25in]{geometry}
-\usepackage[markup=bfit, addedmarkup=colored, deletedmarkup=sout, commentmarkup=footnote, authormarkup=none, defaultcolor=BrickRed]{changes}
+\usepackage[commandnameprefix=always, markup=bfit, addedmarkup=colored, deletedmarkup=sout, commentmarkup=footnote, authormarkup=none, defaultcolor=BrickRed]{changes}
 % \usepackage[markup=bfit, addedmarkup=it, deletedmarkup=sout, commentmarkup=margin, authormarkup=none, todonotes={textwidth=2.5in}]{changes}
 % \usepackage{marginnote}
 
@@ -56,7 +86,32 @@
 % \setaddedmarkup{\tinycolorbox{ForestGreen}{#1}\ }
 \setaddedmarkup{\color{ForestGreen}{#1}\ }
 
-\setcommentmarkup{\footnote{\parbox[t]{\linewidth}{#1}}}
+% \setcommentmarkup{\footnote{\parbox[t]{\linewidth}{#1}}}
+\setcommentmarkup{\footnote{#1}}
+
+ % LOAD THESE LAST!
+\usepackage{hyperref,cleveref} 
+\hypersetup{pdfborder=0 0 0}
+
+% --- LATEX AND HTML CUSTOMIZATION ---
+% \title{The Lwarp Tutorial}
+% \author{Some Author}
+\setcounter{tocdepth}{2}        % Include subsections in the \TOC.
+\setcounter{secnumdepth}{2}     % Number down to subsections.
+\setcounter{FileDepth}{-5}       % Split \HTML\ files at sections
+\booltrue{CombineHigherDepths}  % Combine parts/chapters/sections
+\setcounter{SideTOCDepth}{1}    % Include subsections in the side\TOC
+\HTMLTitle{Webpage Title}       % Overrides \title for the web page.
+\HTMLAuthor{Some Author}        % Sets the HTML meta author tag.
+\HTMLLanguage{en-US}            % Sets the HTML meta language.
+\HTMLDescription{A description.}% Sets the HTML meta description.
+\HTMLFirstPageTop{Name and \fbox{HOMEPAGE LOGO}}
+\HTMLPageTop{\fbox{LOGO}}
+\HTMLPageBottom{Contact Information and Copyright}
+% \CSSFilename{lwarp_sagebrush.css}
+% \CSSFilename{lwarp_formal.css}
+% \CSSFilename{lwarp_lamp.css}
+
 
 \begin{document}
 % \begin{preview}
@@ -69,25 +124,27 @@
 
 \section{Name and Purpose}
 \begin{level}
-    \item This organization shall be known as The Northern Steppes, a realm of Belegarth Medieval Combat Society.
+    \item This organization shall be known as Northern Steppes, a realm of Belegarth Medieval Combat Society.
     \item The purpose of this organization is to participate in the Foam Sport Belegarth, which includes running regularly scheduled practices and events.
 \end{level}
 
-\section{Definitions\comment{Completely new article}}
+% \section{Definitions}
+\section{Definitions\chcomment{Completely new article}}
 \begin{level}
-    \item \textbf{Realm}. This organization, previously known as a \emph{chapter}\comment{All instances of ``chapter'' have been replaced with ``realm''}.
+    \item \textbf{Realm}. This organization, previously known as a \emph{chapter}\chcomment{All instances of ``chapter'' have been replaced with ``realm''}.
     \item \textbf{Leadership}. Individuals that fulfill offices and roles defined in \emph{Article~\ref{leadership}}.
     \item \textbf{The Council}. The group of officers defined in \ref{the_council}
     \item \textbf{Officer}. An individual belonging to the \emph{Council} that fulfills an office defined in \ref{council_officers}
     \item \textbf{Role-Holder}. An individual that fulfills a Supplemental Role defined in \ref{supplemental_roles}
-    \item \textbf{Members}. \emph{Members of the Realm}. Individuals that have registered via \emph{Article~\ref{membership}}.
+    \item \textbf{Registering}. Becoming a member or renewing membership via \emph{Article~\ref{membership}}.
+    \item \textbf{Members}. \emph{Members of the Realm}. Individuals that have \emph{Registered}.
     \item \textbf{Participants}. Anyone attending Realm-hosted events, both combatants \& non-combatants.
     \item \textbf{Event}. Any scheduled happening arranged by the Realm: weekly practices, build days, special events, member meetings.
     \item \textbf{Special Event}. A larger, fighting-based event, where fighters outside of the Realm are explicitly invited, e.g. GotC, Kill-Grill-Chills
     \item \textbf{Troll}. The check-in set up at special events where participants can pay, sign-in, and get information about the event.
     \item \textbf{Quorum}. The minimum number of people needed for a vote to be valid.
     \item \textbf{Simple Majority}. More \emph{Yes} votes than \emph{No} votes with the total number of \emph{Yes}/\emph{No} votes exceeding quorum.
-    \item \textbf{Consensus Approval}. A quorum of \emph{Yes} votes with 0 \emph{No} votes.
+    \item \textbf{Consensus Approval}. \emph{Yes} votes exceeding quorum with 0 \emph{No} votes.
     \item \textbf{Online}. Regarding voting, a group-specific Discord channel, group text, or group chat.
 \end{level}
 
@@ -100,35 +157,36 @@
         \item \textbf{Rigid Armor}. Rigid metal knee and elbow armor is allowed.
         \item \textbf{Healing Poems}. A poem of Healing must be recited or read aloud. The minimum length of a poem of healing is 180 syllables and must be approved at event check-in.
         \begin{level}
-            \item The healer cannot heal \replaced[comment=More inclusive language]{themself}{her/himself} or their own equipment.
+            \item The healer cannot heal \chreplaced[comment=More inclusive language]{themselves}{her/himself} or their own equipment.
             \item To heal a person, the Healer must be in direct physical contact with the injured person. The healer may only heal one person at a time.
             \item A healer may not heal a person while either are under direct attack. If the healer or injured person is attacked or distracted, or contact is broken for any reason, the entire healing poem must be read or recited again.
             \item When the healer completes reading the healing poem, all wounds and any items held by the wounded fighter are healed or repaired (i.e. armor, bow, shield, etc)
         \end{level}
     \end{level}
-    \item \added{All leadership, members, and participants must abide by the Code of Conduct established by the Council.}
+    \item \chadded{All leadership, members, and participants must abide by the Code of Conduct established by the Council.}
 \end{level}
 
-\section{Membership\comment{Completely rewritten article---main changes are highlighted}}\label{membership}
+% \section{Membership}\label{membership}
+\section{Membership\chcomment{Completely rewritten article---main changes are highlighted}}\label{membership}
 \begin{level}
-    \item \textbf{Benefits}. While anyone may attend events and use loaner gear, participants may annually register as a \emph{Member} of the Northern Steppes and be granted the following benefits:
+    \item \textbf{Benefits}. While anyone may attend events and use loaner gear, participants may annually register as a \emph{Member} of Northern Steppes and be granted the following benefits:
     \begin{level}
-        \item \added{Priority use of loaner gear.}
-        \item \added{Use of any Council-specified, Member-only loaner gear.}
+        \item \chadded{Priority use of loaner gear.}
+        \item \chadded{Use of any Council-specified, Member-only loaner gear.}
         \item Voting rights during the annual meeting and other voting events.
-        \item \added{Entrance to all Northern Steppes non-overnight events, such as:}
+        \item \chadded{Entrance to all Northern Steppes non-overnight events, such as:}
         \begin{level}
             \item A singular day at GotC (longer stays will require the difference to be paid).
             \item Build days that may have an entry fee.
         \end{level}
     \end{level}
-    \item \textbf{Registration}. \added{Members may not register in the period between the closing of bylaw amendments mentioned in Article~\expandafter{\ref{amendments}}
+    \item \textbf{Registration}. \chadded{Members may not register in the period between the closing of bylaw amendments mentioned in Article~\expandafter{\ref{amendments}}
         and the end-of-voting during the annual meeting}, and any dues paid during this period will cause their registration to be delayed until the end-of-voting during 
         the annual meeting. Otherwise, registration happens as soon as dues are paid.
     \item \textbf{Term}. Membership lasts from registration until the next end-of-voting at the annual meeting. 
     \item \textbf{Dues}. The standard annual rate is \$30.
     \begin{level}
-        \item \added[comment=Discount and/or standard rate may be adjusted---we could remove it from the bylaws \& let the Council decide it on a yearly basis.]{To encourage registering at the beginning of a season, any registration prior to May 1st will receive a discount of \$5.} 
+        \item \chadded[comment=Discount and/or standard rate may be adjusted---we could remove it from the bylaws \& let the Council decide it on a yearly basis.]{To encourage registering at the beginning of a season, any registration prior to May 1st will receive a discount of \$5.} 
         \item If dues are unaffordable by someone wanting to become a Member, the Council may approve an explicit amount of volunteering, completed prior to their registration, in lieu of dues.
     \end{level}
     \item \textbf{Uses}. Usage of funds is decided by the Council with information supplied by the Treasurer, and may include, but is not limited to:
@@ -141,7 +199,8 @@
     \item \textbf{Removal}. If a Member is banned from the realm, their membership is automatically revoked, with no refundment of dues.
 \end{level}
 
-\section{Leadership\comment{Completely rewritten article---main changes are highlighted}}\label{leadership}
+% \section{Leadership}\label{leadership}
+\section{Leadership\chcomment{Completely rewritten article---main changes are highlighted}}\label{leadership}
 \begin{level}
     \item Leadership consists of all Council officers and anyone fulfilling a supplemental role, and all are required to:
     \begin{level}
@@ -151,12 +210,12 @@
     \end{level}
     \item \textbf{The Council} is the main decision-making entity of the realm.\label{the_council}
     \begin{level}
-        \item \added{\textbf{Voting}. The Council may vote on day-to-day matters for which there is no clear consensus.}
+        \item \chadded{\textbf{Voting}. The Council may vote on day-to-day matters for which there is no clear consensus.}
         \begin{level}
             \item In Council votes, a quorum is three officers, and must include the President or Vice President. 
-            \item If a quorum is present in person, an attempt should be made to discuss and gather the votes of those not present online, but the voting may happen in person.
+            \item If a quorum is present in person, an attempt should be made to discuss and gather the votes of those not present \emph{Online}, but the voting may happen in person.
             \begin{level}
-                \item Otherwise, the discussion and voting should happen online.
+                \item Otherwise, the discussion and voting should happen \emph{Online}.
             \end{level}
             \item All vote results should be announced to Leadership and recorded by the Secretary.
             \item The Council may choose to discuss any issue with Leadership-at-large or Realm Members, but only Council officers may vote.
@@ -176,7 +235,7 @@
             \item Meet for at least 15 minutes every month.
             \item Organize an annual meeting as described in Article~\ref{annual_meeting}.
         \end{level}
-        \item \added{\textbf{Capabilities}}. A \emph{Simple Majority} is required unless otherwise specified:
+        \item \chadded{\textbf{Capabilities}}. A \emph{Simple Majority} is required unless otherwise specified:
         \begin{level}
             \item \textbf{Create a new supplemental role}, with (a) a title and (b) explicit written responsibilities, and (c) notify realm members.
             \item \textbf{Assign any role} (vacant or occupied) for the duration of a special event, as long as (a) that person is a realm member, and (b) special event attendees are notified, either ahead of time or during the special event.\label{temp_role}
@@ -186,10 +245,10 @@
             \item \textbf{Remove an officer} with \emph{Consensus Approval}, notify realm members, and replace the officer via Section~\ref{officer_replacement}\label{officer_removal}
             \item \textbf{Ban a participant} from the realm with a \emph{Consensus Approval}.
         \end{level}
-        \item \textbf{Removal}. If a petition signed by \replaced[comment=Revised quorum definition accomplishes the same goal]{a quorum of realm members}{Abstained signatures are only considered ``nay'' in this scenario; this is in exception to Article VI Section 1.1.} to impeach an officer is presented to the Council, the Council should:
+        \item \textbf{Removal}. If a petition signed by \chreplaced[comment=Revised quorum definition accomplishes the same goal]{a quorum of realm members}{Abstained signatures are only considered ``nay'' in this scenario; this is in exception to Article VI Section 1.1.} to impeach an officer is presented to the Council, the Council should:
         \begin{level}
-            \item Give that officer one month to turn over responsibilities to another officer, \added{at which point that office is considered vacant, and may be appointed via Section~\ref{officer_replacement}}\label{officer_yield}
-            \item \added{\emph{OR} vote to remove the officer immediately via Section~\expandafter{\ref{officer_removal}}. If the vote fails, Section~\expandafter{\ref{officer_yield}} must be followed.}
+            \item Give that officer one month to turn over responsibilities to another officer, \chadded{at which point that office is considered vacant, and may be appointed via Section~\ref{officer_replacement}}\label{officer_yield}
+            \item \chadded{\emph{OR} vote to remove the officer immediately via Section~\expandafter{\ref{officer_removal}}. If the vote fails, Section~\expandafter{\ref{officer_yield}} must be followed.}
         \end{level}
         \item \textbf{Resignation}. An officer may resign at any time, and should be replaced via Section~\ref{officer_replacement}
     \end{level}
@@ -214,17 +273,17 @@
             \item Fill the gaps in duties described in these bylaws.
             \item Encouraged to also run for a supplemental role.
         \end{level}
-        \item \textbf{Secretary}\comment{Created from Quartermaster's responsibilities}
+        \item \textbf{Secretary}\chcomment{Created from Quartermaster's responsibilities}
         \begin{level}
             \item Waiver gathering and tracking.
             \item Update realm information as needed.
             \item Keep record of former information.
             \item Operate Troll at special events, or train someone to do so.
             \begin{level}
-                \item \added{Keep a list of people that are able to operate Troll and make Leadership aware of them.}
+                \item \chadded{Keep a list of people that are able to operate Troll and make Leadership and special event staff aware of them.}
             \end{level}
             \item Take notes/minutes during meetings.
-            \item \added{Store/update any standard operating procedures.}
+            \item \chadded{Store/update any standard operating procedures.}
             \item Establish standard operating procedures to:
             \begin{level}
                 \item Operate Troll at special events.
@@ -245,22 +304,22 @@
             \end{level}
             \item In collaboration with the Public Relations Coordinator, inform realm members and potential attendees about realm events.
             \item The Council is to be consulted on any subgroup sponsorship when budgeting and planning for the realm event.
-            \item \added{Coordinate a presence at other events, and serve as/delegate a campmaster.}
-            \item \added{Establish standard operating procedures for event-specific tasks, such as:}
+            \item \chadded{Coordinate a presence at other events, and serve as/delegate a campmaster.}
+            \item \chadded{Establish standard operating procedures for event-specific tasks, such as:}
             \begin{level}
                 \item Opening/setting-up.
                 \item Daily happenings \& officer responsibilities during the event.
                 \item Closing/cleaning-up.
             \end{level}
         \end{level}
-        \item \textbf{Safety Officer}\comment{Previously known as Warden}
+        \item \textbf{Safety Officer}\chcomment{Previously known as Warden}
         \begin{level}
             \item Be familiar with the Belegarth Book of War, and all realm-specific rules.
             \item Educate participants on rules and safety, including realm-specific rules. 
             \item Head security at special events.
             \item Oversee weapons-check at special events.
             \item Test and approve weapons at practices.
-            \item \added{Establish standard operating procedures to:}
+            \item \chadded{Establish standard operating procedures to:}
             \begin{level}
                 \item Marshal battles, including the training of volunteers.
                 \item Check weapons, including the training of volunteers.
@@ -286,7 +345,7 @@
             \item Reimburse purchases
         \end{level}
     \end{level}
-    \item \added{\textbf{Quartermaster}}. Safety Officer if vacant. Has the following responsibilities:
+    \item \chadded{\textbf{Quartermaster}}. Safety Officer if vacant. Has the following responsibilities:
     \begin{level}
         \item Be knowledgeable on gear construction techniques.
         \item Maintain loaner gear and replace/repair as needed.
@@ -294,7 +353,7 @@
         \item Attend and lead realm build-days, and in collaboration with the Event Officer, plan them.
         \item Establish instructions for recommended weapon construction.
     \end{level}
-    \item \added{\textbf{Battlemaster}}. Event Officer if vacant. Has the following responsibilities:
+    \item \chadded{\textbf{Battlemaster}}. Event Officer if vacant. Has the following responsibilities:
     \begin{level}
         \item Plan, design, and construct field battles for fighting-based events, in collaboration with the Event Officer.
         \item Assign and coordinate marshals, after marshals are trained by the Safety Officer.
@@ -307,7 +366,7 @@
     \item \textbf{Public Relations Coordinator}. President if vacant. Has the following responsibilities:
     \begin{level}
         \item Main point of contact for all realm-level media coverage.
-        \item \added{Have access to and regularly check the realm email account.}
+        \item \chadded{Have access to and regularly check the realm email account.}
         \item Manage all social media channels officially associated with the realm.
         \item Create and post content on social media platforms.
         \item Oversee outreach campaigns (physical, social media, email, etc) such as:
@@ -318,7 +377,7 @@
             \item Election and voting motions
         \end{level}
         \item Work to increase social media followers for the realm.
-        \item \added{Establish standard operating procedures to:}
+        \item \chadded{Establish standard operating procedures to:}
         \begin{level}
             \item Create content.
             \item Launch social media/email campaigns.
@@ -330,7 +389,7 @@
         \item In collaboration with the Event Officer, update special event pages on the website.
         \item In collaboration with the Secretary, maintain an email list for realm members, special event attendees, etc.
         \item In collaboration with the Public Relations Coordinator, facilitate email campaigns.
-        \item \added{In collaboration with the President, communicate voting efforts.}
+        \item \chadded{In collaboration with the President, communicate voting efforts.}
     \end{level}
     \item \textbf{Belegarth War Council Representative (2)}. President (primary) and Vice President (alternate) if vacant. Has the following responsibilities:
     \begin{level}
@@ -347,20 +406,20 @@
 
 \section{Meetings and Quorum}\label{annual_meeting}
 \begin{level} 
-    \item \added{A realm member meeting may be scheduled at any time, given that members are notified at least four (4) weeks prior to the meeting.}
+    \item \chadded{A realm member meeting may be scheduled at any time, given that members are notified at least four (4) weeks prior to the meeting.}
     \item A single annual meeting is required for realm members to elect new leadership. 
     \begin{level}
         \item The date, time, and location is determined by the Council. 
         \item This should be completed before the end of January each year.
     \end{level}
-    \item During any member meeting, \replaced[comment={This wording was confusing, and as our membership grows, it may be impossible to get this many people. 50\% + 1 is safer, more common, and will prevent minority rule.}]{the quorum shall consist of 50\% of members plus one (1)}{Quorum is defined as 75\% of the subject in question. This applies to all votes and attendance of meetings. Regarding votes, a vote of “abstain” is not included in the total count of those present for that issue}.
+    \item During any member meeting, \chreplaced[comment={This wording was confusing, and as our membership grows, it may be impossible to get this many people. 50\% + 1 is safer, more common, and will prevent minority rule.}]{the quorum shall consist of 50\% of members plus one (1)}{Quorum is defined as 75\% of the subject in question. This applies to all votes and attendance of meetings. Regarding votes, a vote of “abstain” is not included in the total count of those present for that issue}.
 \end{level}
 
 \section{Amendments}\label{amendments}
 \begin{level} 
     \item Amendments to this document shall be introduced to the Council in writing, no less than three (3) weeks prior to a member meeting. 
-    \item \added{Amendments should be read and discussed during a member meeting prior to voting, if quorum is present.}
-    \item \replaced[comment={This wording was unclear, as quorum is usually applied to the number of votes needed for a valid vote, not pass/fail status.}]{A \emph{Simple Majority} is required for an amendment to pass.}{Quorum of those in attendance is necessary for them to pass.}
+    \item \chadded{Amendments should be read and discussed during a member meeting prior to voting, if quorum is present.}
+    \item \chreplaced[comment={This wording was unclear, as quorum is usually applied to the number of votes needed for a valid vote, not pass/fail status.}]{A \emph{Simple Majority} is required for an amendment to pass.}{Quorum of those in attendance is necessary for them to pass.}
 \end{level}
 
 \section{Enabling Act}
