@@ -121,7 +121,7 @@ all are required to:
                 * 3.4.1.2.2. “Kill-Grill-Chill” potluck-type events
             * 3.4.1.3. Build days
             * 3.4.1.4. Annual meetings
-        * 3.4.2. In collaboration with the Public Relations Coordinator, inform realm mem bers and potential attendees about realm events.
+        * 3.4.2. In collaboration with the Public Relations Coordinator, inform realm members and potential attendees about realm events.
         * 3.4.3. The Council is to be consulted on any subgroup sponsorship when budgeting and planning for the realm event.
         * 3.4.4. Coordinate a presence at other events, and serve as/delegate a campmaster.
         * 3.4.5. Establish standard operating procedures for event-specific tasks, such as:
@@ -150,13 +150,13 @@ all are required to:
         * 4.3.7. Establish standard operating procedures to:
             * 4.3.7.1. File taxes
             * 4.3.7.2. Reimburse purchases
-    * 4.4. Quartermaster . Safety Officer if vacant. Has the following responsibilities:
+    * 4.4. Quartermaster. Safety Officer if vacant. Has the following responsibilities:
         * 4.4.1. Be knowledgeable on gear construction techniques.
         * 4.4.2. Maintain loaner gear and replace/repair as needed.
         * 4.4.3. Store or designate an officer to store loaner gear, which should be brought to all fighting-based events.
         * 4.4.4. Attend and lead realm build-days, and in collaboration with the Event Officer, plan them.
         * 4.4.5. Establish instructions for recommended weapon construction.
-    * 4.5. Battlemaster . Event Officer if vacant. Has the following responsibilities:
+    * 4.5. Battlemaster. Event Officer if vacant. Has the following responsibilities:
         * 4.5.1. Plan, design, and construct field battles for fighting-based events, in collaboration with the Event Officer.
         * 4.5.2. Assign and coordinate marshals, after marshals are trained by the Safety Officer.
         * 4.5.3. Serve as or appoint a head marshal, who will:
