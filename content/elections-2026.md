@@ -1,3 +1,7 @@
++++
+title = "Elections 2026"
++++
+
 # Feastmas 2026
 
 ## Attending (8 voting members)
