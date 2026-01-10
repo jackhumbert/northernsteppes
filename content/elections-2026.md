@@ -12,7 +12,12 @@
 * Thalin
 * Kaigar *
 * Mallory
-* Raven
+
+Later:
+
+* Raven *
+* Raine
+* Quelen
 
 ## Voting Items
 
